@@ -28,14 +28,14 @@ jobs:
           echo "Downloading mihomo..."
           curl -L --max-time 30 --retry 3 --retry-delay 5 \
             -o ~/.cache/mihomo/mihomo.gz \
-            https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1.19.21.gz
+            https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1-v1.19.21.gz
           gunzip ~/.cache/mihomo/mihomo.gz
           chmod +x ~/.cache/mihomo/mihomo
 
-      # 直接使用缓存中的 mihomo，不再复制到系统目录
+      # 正确测试（必须用 --version，否则会启动代理）
       - name: Test mihomo
         run: |
-          ~/.cache/mihomo/mihomo version
+          ~/.cache/mihomo/mihomo --version
 
       # Python 环境
       - name: Set up Python
@@ -47,7 +47,7 @@ jobs:
       - name: 生成干净广告规则集 (YAML)
         run: python adblock-clean/generate.py
 
-      # 转换 YAML → MRS
+      # 转换 YAML → MRS（不会启动代理）
       - name: 转换 YAML → MRS
         run: |
           ~/.cache/mihomo/mihomo convert-ruleset domain yaml adblock-clean-full.yaml adblock-clean-full.mrs
@@ -62,4 +62,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "没有变化，跳过提交"
           else
-            git commit -m "chore
+            git commit -m "chore: 自动更新干净广告规则集 (Full + Lite)"
+            git push
+          fi
