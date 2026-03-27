@@ -2,7 +2,7 @@ name: Adblock Clean Update (Full + Lite)
 
 on:
   schedule:
-    - cron: '0 4 * * *'   # 每天中午12点（北京时间）
+    - cron: '0 4 * * *'
   workflow_dispatch:
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 缓存 mihomo，可执行文件会存放在 ~/.cache/mihomo
+      # 缓存 mihomo
       - name: Cache mihomo
         id: cache-mihomo
         uses: actions/cache@v4
@@ -20,7 +20,7 @@ jobs:
           path: ~/.cache/mihomo
           key: mihomo-v1.19.21
 
-      # 如果缓存不存在，则下载 mihomo
+      # 下载 mihomo（仅第一次）
       - name: Download mihomo if cache miss
         if: steps.cache-mihomo.outputs.cache-hit != 'true'
         run: |
@@ -32,12 +32,10 @@ jobs:
           gunzip ~/.cache/mihomo/mihomo.gz
           chmod +x ~/.cache/mihomo/mihomo
 
-      # 安装 mihomo（注意：必须执行 version，否则会启动代理导致卡住）
-      - name: Install mihomo
+      # 直接使用缓存中的 mihomo，不再复制到系统目录
+      - name: Test mihomo
         run: |
-          sudo cp ~/.cache/mihomo/mihomo /usr/local/bin/mihomo
-          chmod +x /usr/local/bin/mihomo
-          mihomo version
+          ~/.cache/mihomo/mihomo version
 
       # Python 环境
       - name: Set up Python
@@ -45,18 +43,15 @@ jobs:
         with:
           python-version: '3.11'
 
-      # 生成 YAML（你的脚本）
+      # 生成 YAML
       - name: 生成干净广告规则集 (YAML)
         run: python adblock-clean/generate.py
 
       # 转换 YAML → MRS
       - name: 转换 YAML → MRS
         run: |
-          echo "=== 转换 Full ==="
-          mihomo convert-ruleset domain yaml adblock-clean-full.yaml adblock-clean-full.mrs
-
-          echo "=== 转换 Lite ==="
-          mihomo convert-ruleset domain yaml adblock-clean-lite.yaml adblock-clean-lite.mrs
+          ~/.cache/mihomo/mihomo convert-ruleset domain yaml adblock-clean-full.yaml adblock-clean-full.mrs
+          ~/.cache/mihomo/mihomo convert-ruleset domain yaml adblock-clean-lite.yaml adblock-clean-lite.mrs
 
       # 自动提交更新
       - name: Commit & Push 更新
@@ -67,6 +62,4 @@ jobs:
           if git diff --staged --quiet; then
             echo "没有变化，跳过提交"
           else
-            git commit -m "chore: 自动更新干净广告规则集 (Full + Lite)"
-            git push
-          fi
+            git commit -m "chore
