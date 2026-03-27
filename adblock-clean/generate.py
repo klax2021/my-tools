@@ -31,7 +31,7 @@ def main():
     print("加载白名单...")
     white = load_yaml_payload(white_url)
 
-    # 白名单匹配集合（兼容 +.domain / domain 两种格式）
+    # 白名单匹配集合
     white_set = set()
     for line in white:
         s = line.removeprefix("- ").strip()
@@ -39,23 +39,23 @@ def main():
             white_set.add(s)
             white_set.add("+" + s)
 
-    # 清理 Full 版
+    # 清理 Full 版 + 记录被删除的域名
     clean_full = []
-    removed_full = 0
+    removed_full = []
     for line in black_full:
         s = line.removeprefix("- ").strip()
         if s in white_set:
-            removed_full += 1
+            removed_full.append(s)
             continue
         clean_full.append(line)
 
     # 清理 Lite 版
     clean_lite = []
-    removed_lite = 0
+    removed_lite = []
     for line in black_lite:
         s = line.removeprefix("- ").strip()
         if s in white_set:
-            removed_lite += 1
+            removed_lite.append(s)
             continue
         clean_lite.append(line)
 
@@ -63,25 +63,35 @@ def main():
     with open("adblock-clean-full.yaml", "w", encoding="utf-8") as f:
         f.write("# 干净广告规则 Full（官方全量去白名单）\n")
         f.write("# 来源: 217heidai/adblockmihomo + 045200 白名单\n")
-        f.write(f"# 移除冲突: {removed_full}\n")
+        f.write(f"# 移除冲突: {len(removed_full)}\n")
         f.write(f"# 最终条数: {len(clean_full)}\n\n")
         f.write("payload:\n")
         for line in clean_full:
             f.write("  " + line + "\n")
 
-    # 写入 Lite（官方精简版）
+    # 写入 Lite
     with open("adblock-clean-lite.yaml", "w", encoding="utf-8") as f:
         f.write("# 干净广告规则 Lite（官方精简去白名单）\n")
         f.write("# 来源: 217heidai/adblockmihomolite + 045200 白名单\n")
-        f.write(f"# 移除冲突: {removed_lite}\n")
+        f.write(f"# 移除冲突: {len(removed_lite)}\n")
         f.write(f"# 最终条数: {len(clean_lite)}\n\n")
         f.write("payload:\n")
         for line in clean_lite:
             f.write("  " + line + "\n")
 
+    # ===================== 生成删除明细 =====================
+    all_removed = sorted(list(set(removed_full + removed_lite)))
+    with open("removed_domains.txt", "w", encoding="utf-8") as f:
+        f.write(f"# 因在白名单中、从黑名单剔除的域名（共 {len(all_removed)} 条）\n")
+        f.write(f"# Full 中删除: {len(removed_full)} 条\n")
+        f.write(f"# Lite 中删除: {len(removed_lite)} 条\n\n")
+        for domain in all_removed:
+            f.write(domain + "\n")
+
     print(f"\n✅ 生成完成：")
-    print(f"Full: {len(clean_full)} 条（移除 {removed_full} 条）")
-    print(f"Lite: {len(clean_lite)} 条（移除 {removed_lite} 条）")
+    print(f"Full: {len(clean_full)} 条（移除 {len(removed_full)} 条）")
+    print(f"Lite: {len(clean_lite)} 条（移除 {len(removed_lite)} 条）")
+    print(f"📄 删除明细已保存到 removed_domains.txt")
 
 if __name__ == "__main__":
     main()
