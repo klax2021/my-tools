@@ -26,14 +26,17 @@ jobs:
         run: |
           mkdir -p ~/.cache/mihomo
           echo "Downloading mihomo..."
-          curl -L -o ~/.cache/mihomo/mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1.19.21.gz
+          curl -L --max-time 30 --retry 3 --retry-delay 5 \
+            -o ~/.cache/mihomo/mihomo.gz \
+            https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1.19.21.gz
           gunzip ~/.cache/mihomo/mihomo.gz
           chmod +x ~/.cache/mihomo/mihomo
 
-      # 安装 mihomo（缓存命中时直接使用）
+      # 安装 mihomo（注意：必须执行 version，否则会启动代理导致卡住）
       - name: Install mihomo
         run: |
           sudo cp ~/.cache/mihomo/mihomo /usr/local/bin/mihomo
+          chmod +x /usr/local/bin/mihomo
           mihomo version
 
       # Python 环境
