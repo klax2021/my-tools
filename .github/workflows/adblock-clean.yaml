@@ -12,21 +12,31 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 不使用缓存，直接重新下载 v1 内核
-      - name: Download mihomo v1 (fresh)
-        run: |
-          rm -rf ~/.cache/mihomo
-          mkdir -p ~/.cache/mihomo
-          echo "Downloading mihomo v1..."
-          curl -L -o ~/.cache/mihomo/mihomo.gz \
-            https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1-v1.19.21.gz
-          gunzip ~/.cache/mihomo/mihomo.gz
-          chmod +x ~/.cache/mihomo/mihomo
+      # 缓存 mihomo 内核
+      - name: Cache mihomo
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/mihomo
+          key: mihomo-v1.19.21-linux-amd64
 
-      # 不安装到系统，直接用下载的文件执行（避免系统旧版本干扰）
+      # 下载 mihomo v1（缓存命中则跳过）
+      - name: Download mihomo v1
+        run: |
+          mkdir -p ~/.cache/mihomo
+          if [ ! -f ~/.cache/mihomo/mihomo ]; then
+            echo "Cache miss, downloading mihomo..."
+            curl -L -o ~/.cache/mihomo/mihomo.gz \
+              https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1-v1.19.21.gz
+            gunzip ~/.cache/mihomo/mihomo.gz
+            chmod +x ~/.cache/mihomo/mihomo
+          else
+            echo "Cache hit, skip download"
+          fi
+
+      # 验证版本
       - name: Test mihomo v1
         run: |
-          ~/.cache/mihomo/mihomo --version
+          ~/.cache/mihomo/mihomo -v
 
       # Python 环境
       - name: Set up Python
@@ -38,7 +48,7 @@ jobs:
       - name: 生成干净广告规则集 (YAML)
         run: python adblock-clean/generate.py
 
-      # 转换 YAML → MRS（直接用下载的 mihomo）
+      # 转换 YAML → MRS
       - name: 转换 YAML → MRS
         run: |
           echo "=== 转换 Full ==="
