@@ -1,61 +1,50 @@
-import requests
+name: Adblock Clean Update (Full + Lite)
 
-def load_rules(url):
-    print(f"Downloading: {url}")
-    resp = requests.get(url, timeout=120)
-    resp.raise_for_status()
-    return resp.text.splitlines()
+on:
+  schedule:
+    - cron: '0 4 * * *'      # 每天北京时间约 12:00 自动运行
+  workflow_dispatch:
 
-def remove_exact_matches(black_lines, white_url):
-    print(f"Downloading whitelist: {white_url}")
-    resp = requests.get(white_url, timeout=90)
-    resp.raise_for_status()
-    white_set = set()
-    for line in resp.text.splitlines():
-        stripped = line.strip()
-        if stripped and not stripped.startswith('#'):
-            white_set.add(stripped)
-            if stripped.startswith('- '):
-                white_set.add(stripped[2:].strip())
-    print(f"Whitelist unique rules: {len(white_set)}")
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-    removed = 0
-    clean_lines = []
-    for line in black_lines:
-        stripped = line.strip()
-        if stripped in white_set or (stripped.startswith('- ') and stripped[2:].strip() in white_set):
-            removed += 1
-            continue
-        clean_lines.append(line)
-    return clean_lines, removed
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-def save_file(filename, lines, version, removed):
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(f"# Clean Adblock {version} - 只删除与白名单完全相同的条目\n")
-        f.write("# Black: 217heidai/adblockfilters\n")
-        f.write("# White: 045200/ad-filter\n")
-        f.write(f"# Removed exact matches: {removed}\n")
-        f.write(f"# Remaining rules: {len(lines)}\n\n")
-        for line in lines:
-            f.write(line + "\n")
-    print(f"✅ 生成 {filename} 完成！剩余 {len(lines)} 条规则（删除 {removed} 条）")
+      - name: 生成干净广告规则集 (YAML)
+        run: python adblock-clean/generate.py
 
-def main():
-    white_url = "https://raw.githubusercontent.com/045200/ad-filter/multi/allow_clash.yaml"
+      - name: 安装最新 mihomo 并转换为 MRS
+        run: |
+          echo "正在下载最新 mihomo (v1.19.21)..."
+          wget https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1.19.21.gz -O mihomo.gz || \
+          wget https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-compatible-v1.19.21.gz -O mihomo.gz
 
-    # 处理完整版
-    print("\n=== 处理完整版 (Full) ===")
-    full_url = "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomo.yaml"
-    full_lines = load_rules(full_url)
-    clean_full, removed_full = remove_exact_matches(full_lines, white_url)
-    save_file("adblock-clean-full.yaml", clean_full, "Full", removed_full)
+          gunzip mihomo.gz
+          chmod +x mihomo
+          sudo mv mihomo /usr/local/bin/mihomo
 
-    # 处理精简版
-    print("\n=== 处理精简版 (Lite) ===")
-    lite_url = "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomolite.yaml"
-    lite_lines = load_rules(lite_url)
-    clean_lite, removed_lite = remove_exact_matches(lite_lines, white_url)
-    save_file("adblock-clean-lite.yaml", clean_lite, "Lite", removed_lite)
+          echo "=== 转换 Full 版到 MRS ==="
+          mihomo convert-ruleset domain yaml adblock-clean-full.yaml adblock-clean-full.mrs || echo "⚠️ Full MRS 转换失败（可能规则为空或格式问题），继续执行..."
 
-if __name__ == "__main__":
-    main()
+          echo "=== 转换 Lite 版到 MRS ==="
+          mihomo convert-ruleset domain yaml adblock-clean-lite.yaml adblock-clean-lite.mrs || echo "⚠️ Lite MRS 转换失败，继续执行..."
+
+      - name: Commit & Push 更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add adblock-clean-full.yaml adblock-clean-full.mrs adblock-clean-lite.yaml adblock-clean-lite.mrs
+          if git diff --staged --quiet; then
+            echo "没有变化，跳过提交"
+          else
+            git commit -m "chore: 自动更新干净广告规则集 (Full + Lite，已剔除白名单精确交集)"
+            git push
+          fi
