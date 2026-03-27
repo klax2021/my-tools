@@ -32,7 +32,7 @@ jobs:
           gunzip ~/.cache/mihomo/mihomo.gz
           chmod +x ~/.cache/mihomo/mihomo
 
-      # 正确测试（必须用 --version，否则会启动代理）
+      # 正确测试（新版支持 --version）
       - name: Test mihomo
         run: |
           ~/.cache/mihomo/mihomo --version
@@ -47,7 +47,7 @@ jobs:
       - name: 生成干净广告规则集 (YAML)
         run: python adblock-clean/generate.py
 
-      # 转换 YAML → MRS（不会启动代理）
+      # 转换 YAML → MRS
       - name: 转换 YAML → MRS
         run: |
           ~/.cache/mihomo/mihomo convert-ruleset domain yaml adblock-clean-full.yaml adblock-clean-full.mrs
