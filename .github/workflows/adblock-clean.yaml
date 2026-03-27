@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 缓存 mihomo
+      # 缓存 mihomo，可执行文件会存放在 ~/.cache/mihomo
       - name: Cache mihomo
         id: cache-mihomo
         uses: actions/cache@v4
@@ -20,22 +20,22 @@ jobs:
           path: ~/.cache/mihomo
           key: mihomo-v1.19.21
 
-      # 下载 mihomo（仅第一次）
+      # 如果缓存不存在，则下载 mihomo（v1 内核）
       - name: Download mihomo if cache miss
         if: steps.cache-mihomo.outputs.cache-hit != 'true'
         run: |
           mkdir -p ~/.cache/mihomo
-          echo "Downloading mihomo..."
-          curl -L --max-time 30 --retry 3 --retry-delay 5 \
-            -o ~/.cache/mihomo/mihomo.gz \
+          echo "Downloading mihomo v1..."
+          curl -L -o ~/.cache/mihomo/mihomo.gz \
             https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1-v1.19.21.gz
           gunzip ~/.cache/mihomo/mihomo.gz
           chmod +x ~/.cache/mihomo/mihomo
 
-      # 正确测试（新版支持 --version）
-      - name: Test mihomo
+      # 安装 mihomo（缓存命中时直接使用）
+      - name: Install mihomo
         run: |
-          ~/.cache/mihomo/mihomo --version
+          sudo cp ~/.cache/mihomo/mihomo /usr/local/bin/mihomo
+          mihomo --version
 
       # Python 环境
       - name: Set up Python
@@ -43,15 +43,18 @@ jobs:
         with:
           python-version: '3.11'
 
-      # 生成 YAML
+      # 生成 YAML（你的脚本）
       - name: 生成干净广告规则集 (YAML)
         run: python adblock-clean/generate.py
 
-      # 转换 YAML → MRS
+      # 转换 YAML → MRS（v1 内核支持 convert-ruleset）
       - name: 转换 YAML → MRS
         run: |
-          ~/.cache/mihomo/mihomo convert-ruleset domain yaml adblock-clean-full.yaml adblock-clean-full.mrs
-          ~/.cache/mihomo/mihomo convert-ruleset domain yaml adblock-clean-lite.yaml adblock-clean-lite.mrs
+          echo "=== 转换 Full ==="
+          mihomo convert-ruleset domain yaml adblock-clean-full.yaml adblock-clean-full.mrs
+
+          echo "=== 转换 Lite ==="
+          mihomo convert-ruleset domain yaml adblock-clean-lite.yaml adblock-clean-lite.mrs
 
       # 自动提交更新
       - name: Commit & Push 更新
