@@ -1,50 +1,15 @@
-name: Adblock Clean Update (Full + Lite)
+# 生成完整广告规则
+with open("adblock-clean-full.yaml", "w", encoding="utf-8") as f:
+    f.write("""payload:
+  - '+.doubleclick.net'
+  - '+.googleadservices.com'
+  - '+.ads.youtube.com'
+  - '+.ad.com'
+""")
 
-on:
-  schedule:
-    - cron: '0 4 * * *'      # 每天北京时间约 12:00 自动运行
-  workflow_dispatch:
-
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: 生成干净广告规则集 (YAML)
-        run: python adblock-clean/generate.py
-
-      - name: 安装最新 mihomo 并转换为 MRS
-        run: |
-          echo "正在下载最新 mihomo (v1.19.21)..."
-          wget https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1.19.21.gz -O mihomo.gz || \
-          wget https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-compatible-v1.19.21.gz -O mihomo.gz
-
-          gunzip mihomo.gz
-          chmod +x mihomo
-          sudo mv mihomo /usr/local/bin/mihomo
-
-          echo "=== 转换 Full 版到 MRS ==="
-          mihomo convert-ruleset domain yaml adblock-clean-full.yaml adblock-clean-full.mrs || echo "⚠️ Full MRS 转换失败（可能规则为空或格式问题），继续执行..."
-
-          echo "=== 转换 Lite 版到 MRS ==="
-          mihomo convert-ruleset domain yaml adblock-clean-lite.yaml adblock-clean-lite.mrs || echo "⚠️ Lite MRS 转换失败，继续执行..."
-
-      - name: Commit & Push 更新
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add adblock-clean-full.yaml adblock-clean-full.mrs adblock-clean-lite.yaml adblock-clean-lite.mrs
-          if git diff --staged --quiet; then
-            echo "没有变化，跳过提交"
-          else
-            git commit -m "chore: 自动更新干净广告规则集 (Full + Lite，已剔除白名单精确交集)"
-            git push
-          fi
+# 生成精简版广告规则
+with open("adblock-clean-lite.yaml", "w", encoding="utf-8") as f:
+    f.write("""payload:
+  - '+.doubleclick.net'
+  - '+.googleadservices.com'
+""")
