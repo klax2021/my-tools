@@ -2,41 +2,60 @@ name: Adblock Clean Update (Full + Lite)
 
 on:
   schedule:
-    - cron: '0 4 * * *'      # 每天北京时间约 12:00 自动运行
+    - cron: '0 4 * * *'   # 每天中午12点（北京时间）
   workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
+      # 缓存 mihomo，可执行文件会存放在 ~/.cache/mihomo
+      - name: Cache mihomo
+        id: cache-mihomo
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/mihomo
+          key: mihomo-v1.19.21
+
+      # 如果缓存不存在，则下载 mihomo
+      - name: Download mihomo if cache miss
+        if: steps.cache-mihomo.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/.cache/mihomo
+          echo "Downloading mihomo..."
+          curl -L -o ~/.cache/mihomo/mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1.19.21.gz
+          gunzip ~/.cache/mihomo/mihomo.gz
+          chmod +x ~/.cache/mihomo/mihomo
+
+      # 安装 mihomo（缓存命中时直接使用）
+      - name: Install mihomo
+        run: |
+          sudo cp ~/.cache/mihomo/mihomo /usr/local/bin/mihomo
+          mihomo version
+
+      # Python 环境
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      # 生成 YAML（你的脚本）
       - name: 生成干净广告规则集 (YAML)
         run: python adblock-clean/generate.py
 
-      - name: 安装最新 mihomo 并转换为 MRS
+      # 转换 YAML → MRS
+      - name: 转换 YAML → MRS
         run: |
-          echo "正在下载最新 mihomo..."
-          wget https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1.19.21.gz -O mihomo.gz || \
-          wget https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-compatible-v1.19.21.gz -O mihomo.gz
+          echo "=== 转换 Full ==="
+          mihomo convert-ruleset domain yaml adblock-clean-full.yaml adblock-clean-full.mrs
 
-          gunzip mihomo.gz
-          chmod +x mihomo
-          sudo mv mihomo /usr/local/bin/mihomo
+          echo "=== 转换 Lite ==="
+          mihomo convert-ruleset domain yaml adblock-clean-lite.yaml adblock-clean-lite.mrs
 
-          echo "=== 转换 Full 版到 MRS ==="
-          mihomo convert-ruleset domain yaml adblock-clean-full.yaml adblock-clean-full.mrs || echo "⚠️ Full MRS 转换失败，继续..."
-
-          echo "=== 转换 Lite 版到 MRS ==="
-          mihomo convert-ruleset domain yaml adblock-clean-lite.yaml adblock-clean-lite.mrs || echo "⚠️ Lite MRS 转换失败，继续..."
-
+      # 自动提交更新
       - name: Commit & Push 更新
         run: |
           git config user.name "github-actions[bot]"
@@ -45,6 +64,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "没有变化，跳过提交"
           else
-            git commit -m "chore: 自动更新干净广告规则集 (Full + Lite，已剔除白名单精确交集)"
+            git commit -m "chore: 自动更新干净广告规则集 (Full + Lite)"
             git push
           fi
