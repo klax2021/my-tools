@@ -79,14 +79,16 @@ def main():
         for line in clean_lite:
             f.write("  " + line + "\n")
 
-    # ===================== 生成删除明细 =====================
+    # ===================== 生成删除清单 YAML =====================
     all_removed = sorted(list(set(removed_full + removed_lite)))
-    with open("removed_domains.txt", "w", encoding="utf-8") as f:
-        f.write(f"# 因在白名单中、从黑名单剔除的域名（共 {len(all_removed)} 条）\n")
-        f.write(f"# Full 中删除: {len(removed_full)} 条\n")
-        f.write(f"# Lite 中删除: {len(removed_lite)} 条\n\n")
-        for domain in all_removed:
-            f.write(domain + "\n")
+    with open("removed_domains.yaml", "w", encoding="utf-8") as f:
+    f.write("# 因白名单被剔除的域名（自动生成）\n")
+    f.write(f"# 总计移除: {len(all_removed)} 条\n")
+    f.write(f"# Full 移除: {len(removed_full)} 条\n")
+    f.write(f"# Lite 移除: {len(removed_lite)} 条\n\n")
+    f.write("payload:\n")
+    for domain in all_removed:
+        f.write(f"  - {domain}\n")
 
     print(f"\n✅ 生成完成：")
     print(f"Full: {len(clean_full)} 条（移除 {len(removed_full)} 条）")
