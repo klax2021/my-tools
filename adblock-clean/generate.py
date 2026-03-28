@@ -81,7 +81,7 @@ def main():
 
     # 生成删除明细
     all_removed = sorted(list(set(removed_full + removed_lite)))
-    with open("removed_domains.txt", "w", encoding="utf-8") as f:
+    with open("removed_domains.yaml", "w", encoding="utf-8") as f:
         f.write("# 因在白名单中、从黑名单剔除的域名（共 " + str(len(all_removed)) + " 条）\n")
         f.write("# Full 中删除: " + str(len(removed_full)) + " 条\n")
         f.write("# Lite 中删除: " + str(len(removed_lite)) + " 条\n\n")
