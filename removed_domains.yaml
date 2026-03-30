@@ -1,8 +1,7 @@
-# 因在白名单中、从黑名单剔除的域名（共 400 条）
-# Full 中删除: 400 条
-# Lite 中删除: 276 条
+# 因在白名单中、从黑名单剔除的域名（共 394 条）
+# Full 中删除: 394 条
+# Lite 中删除: 272 条
 
-'+.1sapp.com'
 '+.360kuai.com'
 '+.40017.cn'
 '+.abtest3-misc-lf.zijieapi.com'
@@ -59,6 +58,7 @@
 '+.api.miui.security.xiaomi.com'
 '+.api.sec.intl.miui.com'
 '+.api.sec.miui.com'
+'+.api.tv.sohu.com'
 '+.app-measurement.com'
 '+.appcfg.v.qq.com'
 '+.appconf.heytapdownload.com'
@@ -182,9 +182,7 @@
 '+.gdtimg.com'
 '+.geo.query.yahoo.com'
 '+.get.x-link.pl'
-'+.gk.sina.cn'
 '+.gl.zle.com'
-'+.gma.alicdn.com'
 '+.google-analytics.com'
 '+.googleadservices.com'
 '+.googletagmanager.com'
@@ -215,7 +213,7 @@
 '+.img.ssl.msdk.qq.com'
 '+.imop.com'
 '+.in.appcenter.ms'
-'+.inskinmedia.com'
+'+.interest.mix.sina.com.cn'
 '+.iwan-s.video.qq.com'
 '+.iyfbodn.com'
 '+.jpush.cn'
@@ -335,12 +333,9 @@
 '+.sjh.baidu.com'
 '+.snowflake.qq.com'
 '+.sobot.com'
-'+.soup.v.qq.com'
-'+.sovrn.com'
-'+.sp0.baidu.com'
-'+.sp1.baidu.com'
-'+.sp2.baidu.com'
-'+.speee-ad.akamaized.net'
+'+.sofire.baidu.com'
+'+.sofire.bdstatic.com'
+'+.srv.sec.miui.com'
 '+.ssw.live.com'
 '+.st.todesk.com'
 '+.stat.funshion.com'
@@ -385,7 +380,6 @@
 '+.uri6.com'
 '+.uxip.meizu.com'
 '+.v.miguvideo.com'
-'+.vali-g1.cp31.ott.cibntv.net'
 '+.valuecommerce.com'
 '+.w1.kskwai.com'
 '+.w8.com.cn'
