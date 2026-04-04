@@ -1,6 +1,6 @@
-# 因在白名单中、从黑名单剔除的域名（共 408 条）
-# Full 中删除: 408 条
-# Lite 中删除: 287 条
+# 因在白名单中、从黑名单剔除的域名（共 410 条）
+# Full 中删除: 410 条
+# Lite 中删除: 291 条
 
 '+.1sapp.com'
 '+.360kuai.com'
@@ -8,7 +8,10 @@
 '+.abtest3-misc-lf.zijieapi.com'
 '+.ac.dun.163yun.com'
 '+.accscdn.m.taobao.com'
+'+.acs4baichuan.m.taobao.com'
 '+.act.vip.iqiyi.com'
+'+.activity.browser.intl.miui.com'
+'+.ad-api-v01.uliza.jp'
 '+.ad-log-upload.mihoyo.com'
 '+.ad-maven.com'
 '+.ad.12306.cn'
@@ -24,16 +27,14 @@
 '+.ads.microsoft.com'
 '+.ads.pinterest.com'
 '+.ads.reddit.com'
-'+.ads.snapchat.com'
 '+.ads.spotify.com'
-'+.ads.tiktok.com'
-'+.ads.twitter.com'
 '+.ads.vk.com'
 '+.adshnk.com'
 '+.adsninja.ca'
 '+.adstats.tencentmusic.com'
 '+.adswizz.com'
 '+.adtrack.xiaojukeji.com'
+'+.adtraction.com'
 '+.adv.ccb.com'
 '+.adv.sec.miui.com'
 '+.aegis.qq.com'
@@ -74,10 +75,12 @@
 '+.bds.snssdk.com'
 '+.beacon-api.aliyuncs.com'
 '+.beaconcdn.qq.com'
+'+.bjfesdk.douyucdn.cn'
 '+.blockadblock.com'
 '+.bootcss.com'
 '+.browser.events.data.microsoft.com'
 '+.browser.pipe.aria.microsoft.com'
+'+.btrace.qq.com'
 '+.c.bing.com'
 '+.c.gj.qq.com'
 '+.c.live.com'
@@ -210,7 +213,6 @@
 '+.ijinshan.com'
 '+.im-x.jd.com'
 '+.img.ssl.msdk.qq.com'
-'+.inskinmedia.com'
 '+.iwan-s.video.qq.com'
 '+.iyfbodn.com'
 '+.jpush.cn'
