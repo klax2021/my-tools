@@ -1,6 +1,6 @@
-# 因在白名单中、从黑名单剔除的域名（共 410 条）
-# Full 中删除: 410 条
-# Lite 中删除: 287 条
+# 因在白名单中、从黑名单剔除的域名（共 397 条）
+# Full 中删除: 397 条
+# Lite 中删除: 277 条
 
 '+.1sapp.com'
 '+.360kuai.com'
@@ -77,10 +77,8 @@
 '+.bds.snssdk.com'
 '+.beacon-api.aliyuncs.com'
 '+.beaconcdn.qq.com'
-'+.blockadblock.com'
 '+.browser.events.data.microsoft.com'
 '+.browser.pipe.aria.microsoft.com'
-'+.btrace.qq.com'
 '+.c.bing.com'
 '+.c.gj.qq.com'
 '+.c.live.com'
@@ -155,7 +153,6 @@
 '+.entitlements.jwplayer.com'
 '+.ereg.adobe.com'
 '+.err.taobao.com'
-'+.etl-xlmc-ssl.sandai.net'
 '+.evtubescms.phncdn.com'
 '+.exponential.com'
 '+.feed-image.baidu.com'
@@ -213,7 +210,8 @@
 '+.ijinshan.com'
 '+.im-x.jd.com'
 '+.img.ssl.msdk.qq.com'
-'+.in.appcenter.ms'
+'+.iwan-s.video.qq.com'
+'+.iyfbodn.com'
 '+.jpush.cn'
 '+.jspassport.ssl.qhimg.com'
 '+.jupiter.intl.sys.miui.com'
@@ -305,7 +303,6 @@
 '+.pos.baidu.com'
 '+.primis.tech'
 '+.pub.network'
-'+.publish-pic-cpu.baidu.com'
 '+.puds.ucweb.com'
 '+.push.m.youku.com'
 '+.pv.sohu.com'
@@ -363,15 +360,7 @@
 '+.sugs.m.sm.cn'
 '+.supportmetrics.apple.com'
 '+.syndicatedsearch.goog'
-'+.t.uc.cn'
-'+.t.zhipin.com'
 '+.tagtic.cn'
-'+.target.microsoft.com'
-'+.target.my.com'
-'+.tbsone.imtt.qq.com'
-'+.tcbox.baidu.com'
-'+.tce.alicdn.com'
-'+.tdid.m.qq.com'
 '+.tkqlhce.com'
 '+.tnc16-platform-useast1a.tiktokv.com'
 '+.tnc3-aliec2.snssdk.com'
@@ -380,7 +369,6 @@
 '+.tpns.tencent.com'
 '+.tpstelemetry.tencent.com'
 '+.track.sohu.com'
-'+.trafficmanager.anyclip.com'
 '+.tunion-api.m.taobao.com'
 '+.u.oppomobile.com'
 '+.u1.img.mobile.sina.cn'
@@ -394,7 +382,6 @@
 '+.uxip.meizu.com'
 '+.v.110route.cn'
 '+.v.miguvideo.com'
-'+.vali-g1.cp31.ott.cibntv.net'
 '+.valuecommerce.com'
 '+.vcs.zijieapi.com'
 '+.w1.kskwai.com'
