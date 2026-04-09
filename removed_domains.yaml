@@ -1,6 +1,6 @@
 # 因在白名单中、从黑名单剔除的域名（共 410 条）
 # Full 中删除: 410 条
-# Lite 中删除: 289 条
+# Lite 中删除: 286 条
 
 '+.360kuai.com'
 '+.40017.cn'
@@ -14,7 +14,6 @@
 '+.ad-log-upload.mihoyo.com'
 '+.ad-maven.com'
 '+.ad.12306.cn'
-'+.ad.ourgame.com'
 '+.adash-emas.cn-hangzhou.aliyuncs.com'
 '+.adashbc.ut.taobao.com'
 '+.adashx.m.taobao.com'
@@ -214,7 +213,6 @@
 '+.ijinshan.com'
 '+.im-x.jd.com'
 '+.img.ssl.msdk.qq.com'
-'+.imop.com'
 '+.in.appcenter.ms'
 '+.iwan-s.video.qq.com'
 '+.iyfbodn.com'
@@ -229,6 +227,7 @@
 '+.laomaotao.net'
 '+.leanplum.com'
 '+.libs.baidu.com'
+'+.linkconnector.com'
 '+.linksynergy.com'
 '+.linkvertise.com'
 '+.livere.com'
@@ -309,6 +308,7 @@
 '+.pos.baidu.com'
 '+.primis.tech'
 '+.pub.network'
+'+.publish-pic-cpu.baidu.com'
 '+.puds.ucweb.com'
 '+.push.m.youku.com'
 '+.pv.sohu.com'
@@ -346,9 +346,9 @@
 '+.sp0.baidu.com'
 '+.sp1.baidu.com'
 '+.sp2.baidu.com'
+'+.speee-ad.akamaized.net'
 '+.srv.sec.miui.com'
 '+.ssw.live.com'
-'+.st.todesk.com'
 '+.stat.funshion.com'
 '+.stat6.y.qq.com'
 '+.static-s.iqiyi.com'
