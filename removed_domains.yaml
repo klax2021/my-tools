@@ -1,7 +1,8 @@
-# 因在白名单中、从黑名单剔除的域名（共 410 条）
-# Full 中删除: 410 条
-# Lite 中删除: 286 条
+# 因在白名单中、从黑名单剔除的域名（共 413 条）
+# Full 中删除: 413 条
+# Lite 中删除: 289 条
 
+'+.1sapp.com'
 '+.360kuai.com'
 '+.40017.cn'
 '+.abtest3-misc-lf.zijieapi.com'
@@ -21,7 +22,6 @@
 '+.adobetag.com'
 '+.ads-api.twitter.com'
 '+.ads-interfaces.sc-cdn.net'
-'+.ads.google.com'
 '+.ads.microsoft.com'
 '+.ads.pinterest.com'
 '+.ads.reddit.com'
@@ -76,7 +76,6 @@
 '+.bds.snssdk.com'
 '+.beacon-api.aliyuncs.com'
 '+.beaconcdn.qq.com'
-'+.blockadblock.com'
 '+.bootcss.com'
 '+.browser.events.data.microsoft.com'
 '+.browser.pipe.aria.microsoft.com'
@@ -100,6 +99,7 @@
 '+.click.justwatch.com'
 '+.click.mailing.ticketmaster.com'
 '+.click.redditmail.com'
+'+.click.zoom.us'
 '+.clickcease.com'
 '+.clickiocdn.com'
 '+.clicktale.net'
@@ -213,7 +213,8 @@
 '+.ijinshan.com'
 '+.im-x.jd.com'
 '+.img.ssl.msdk.qq.com'
-'+.in.appcenter.ms'
+'+.imop.com'
+'+.inskinmedia.com'
 '+.iwan-s.video.qq.com'
 '+.iyfbodn.com'
 '+.jpush.cn'
@@ -268,7 +269,6 @@
 '+.monetag.com'
 '+.monsetting.toutiao.com'
 '+.mparticle.uc.cn'
-'+.mqtt.zhihu.com'
 '+.msg.video.qiyi.com'
 '+.msg.youku.com'
 '+.mssdk.bytedance.com'
@@ -349,6 +349,7 @@
 '+.speee-ad.akamaized.net'
 '+.srv.sec.miui.com'
 '+.ssw.live.com'
+'+.st.todesk.com'
 '+.stat.funshion.com'
 '+.stat6.y.qq.com'
 '+.static-s.iqiyi.com'
@@ -364,6 +365,7 @@
 '+.suggestion.baidu.com'
 '+.sugs.m.sm.cn'
 '+.supportmetrics.apple.com'
+'+.syndicatedsearch.goog'
 '+.t.uc.cn'
 '+.t.zhipin.com'
 '+.tagtic.cn'
@@ -381,6 +383,7 @@
 '+.tpns.tencent.com'
 '+.tpstelemetry.tencent.com'
 '+.track.sohu.com'
+'+.trafficmanager.anyclip.com'
 '+.tunion-api.m.taobao.com'
 '+.u.oppomobile.com'
 '+.u1.img.mobile.sina.cn'
