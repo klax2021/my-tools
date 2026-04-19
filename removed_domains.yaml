@@ -1,11 +1,10 @@
-# 因在白名单中、从黑名单剔除的域名（共 414 条）
-# Full 中删除: 414 条
-# Lite 中删除: 289 条
+# 因在白名单中、从黑名单剔除的域名（共 409 条）
+# Full 中删除: 409 条
+# Lite 中删除: 284 条
 
+'+.1sapp.com'
 '+.360kuai.com'
 '+.40017.cn'
-'+.abtest3-misc-lf.zijieapi.com'
-'+.ac.dun.163yun.com'
 '+.accscdn.m.taobao.com'
 '+.acs4baichuan.m.taobao.com'
 '+.act.vip.iqiyi.com'
@@ -14,7 +13,6 @@
 '+.ad-log-upload.mihoyo.com'
 '+.ad-maven.com'
 '+.ad.12306.cn'
-'+.ad.ourgame.com'
 '+.adash-emas.cn-hangzhou.aliyuncs.com'
 '+.adashbc.ut.taobao.com'
 '+.adashx.m.taobao.com'
@@ -76,8 +74,8 @@
 '+.bds.snssdk.com'
 '+.beacon-api.aliyuncs.com'
 '+.beaconcdn.qq.com'
-'+.bjfesdk.douyucdn.cn'
 '+.blockadblock.com'
+'+.bootcss.com'
 '+.browser.events.data.microsoft.com'
 '+.browser.pipe.aria.microsoft.com'
 '+.btrace.qq.com'
@@ -182,8 +180,6 @@
 '+.gdtimg.com'
 '+.geo.query.yahoo.com'
 '+.get.x-link.pl'
-'+.gk.sina.cn'
-'+.gl.zle.com'
 '+.gma.alicdn.com'
 '+.google-analytics.com'
 '+.googleadservices.com'
@@ -214,8 +210,6 @@
 '+.ijinshan.com'
 '+.im-x.jd.com'
 '+.img.ssl.msdk.qq.com'
-'+.imop.com'
-'+.in.appcenter.ms'
 '+.inskinmedia.com'
 '+.iwan-s.video.qq.com'
 '+.iyfbodn.com'
@@ -338,6 +332,7 @@
 '+.shrtfly.com'
 '+.shuzilm.cn'
 '+.sjh.baidu.com'
+'+.smartcard.apps.coloros.com'
 '+.snowflake.qq.com'
 '+.sobot.com'
 '+.sofire.baidu.com'
