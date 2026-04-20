@@ -1,10 +1,11 @@
-# 因在白名单中、从黑名单剔除的域名（共 409 条）
-# Full 中删除: 409 条
-# Lite 中删除: 284 条
+# 因在白名单中、从黑名单剔除的域名（共 401 条）
+# Full 中删除: 401 条
+# Lite 中删除: 278 条
 
-'+.1sapp.com'
 '+.360kuai.com'
 '+.40017.cn'
+'+.abtest3-misc-lf.zijieapi.com'
+'+.ac.dun.163yun.com'
 '+.accscdn.m.taobao.com'
 '+.acs4baichuan.m.taobao.com'
 '+.act.vip.iqiyi.com'
@@ -57,6 +58,7 @@
 '+.api.miui.security.xiaomi.com'
 '+.api.sec.intl.miui.com'
 '+.api.sec.miui.com'
+'+.api.tv.sohu.com'
 '+.app-measurement.com'
 '+.appcfg.v.qq.com'
 '+.appconf.heytapdownload.com'
@@ -157,11 +159,6 @@
 '+.etl-xlmc-ssl.sandai.net'
 '+.evtubescms.phncdn.com'
 '+.exponential.com'
-'+.feed-image.baidu.com'
-'+.feedback.miui.com'
-'+.festyy.com'
-'+.fexclick.baidu.com'
-'+.fingerprintjs.com'
 '+.flash.sec.intl.miui.com'
 '+.flash.sec.miui.com'
 '+.fourier-videoclip-eu.allawnos.com'
@@ -178,9 +175,6 @@
 '+.gator.volces.com'
 '+.gdfp.gifshow.com'
 '+.gdtimg.com'
-'+.geo.query.yahoo.com'
-'+.get.x-link.pl'
-'+.gma.alicdn.com'
 '+.google-analytics.com'
 '+.googleadservices.com'
 '+.googletagmanager.com'
@@ -395,9 +389,7 @@
 '+.vali-g1.cp31.ott.cibntv.net'
 '+.valuecommerce.com'
 '+.vcs.zijieapi.com'
-'+.w1.kskwai.com'
 '+.w8.com.cn'
-'+.wan.douyu.com'
 '+.wbapp.mobile.sina.cn'
 '+.woniu.com'
 '+.woocall.sina.com.cn'
