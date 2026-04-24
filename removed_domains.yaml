@@ -1,6 +1,6 @@
-# 因在白名单中、从黑名单剔除的域名（共 408 条）
-# Full 中删除: 408 条
-# Lite 中删除: 282 条
+# 因在白名单中、从黑名单剔除的域名（共 414 条）
+# Full 中删除: 414 条
+# Lite 中删除: 287 条
 
 '+.1sapp.com'
 '+.360kuai.com'
@@ -9,9 +9,12 @@
 '+.ac.dun.163yun.com'
 '+.accscdn.m.taobao.com'
 '+.acs4baichuan.m.taobao.com'
+'+.act.vip.iqiyi.com'
 '+.activity.browser.intl.miui.com'
 '+.ad-api-v01.uliza.jp'
+'+.ad-log-upload.mihoyo.com'
 '+.ad-maven.com'
+'+.ad.12306.cn'
 '+.adash-emas.cn-hangzhou.aliyuncs.com'
 '+.adashbc.ut.taobao.com'
 '+.adashx.m.taobao.com'
@@ -74,6 +77,7 @@
 '+.bds.snssdk.com'
 '+.beacon-api.aliyuncs.com'
 '+.beaconcdn.qq.com'
+'+.bjfesdk.douyucdn.cn'
 '+.blockadblock.com'
 '+.bootcss.com'
 '+.browser.events.data.microsoft.com'
@@ -212,8 +216,8 @@
 '+.ijinshan.com'
 '+.im-x.jd.com'
 '+.img.ssl.msdk.qq.com'
+'+.imop.com'
 '+.in.appcenter.ms'
-'+.inskinmedia.com'
 '+.iwan-s.video.qq.com'
 '+.iyfbodn.com'
 '+.jpush.cn'
@@ -307,6 +311,7 @@
 '+.pos.baidu.com'
 '+.primis.tech'
 '+.pub.network'
+'+.publish-pic-cpu.baidu.com'
 '+.puds.ucweb.com'
 '+.push.m.youku.com'
 '+.pv.sohu.com'
@@ -334,7 +339,8 @@
 '+.shuzilm.cn'
 '+.sjh.baidu.com'
 '+.smartcard.apps.coloros.com'
-'+.snowflake.qq.com'
+'+.sofire.baidu.com'
+'+.sofire.bdstatic.com'
 '+.soup.v.qq.com'
 '+.sovrn.com'
 '+.sp0.baidu.com'
@@ -377,6 +383,7 @@
 '+.tpns.tencent.com'
 '+.tpstelemetry.tencent.com'
 '+.track.sohu.com'
+'+.trafficmanager.anyclip.com'
 '+.tunion-api.m.taobao.com'
 '+.u.oppomobile.com'
 '+.u1.img.mobile.sina.cn'
@@ -390,7 +397,6 @@
 '+.uxip.meizu.com'
 '+.v.110route.cn'
 '+.v.miguvideo.com'
-'+.vali-g1.cp31.ott.cibntv.net'
 '+.valuecommerce.com'
 '+.vcs.zijieapi.com'
 '+.w1.kskwai.com'
