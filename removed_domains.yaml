@@ -1,8 +1,7 @@
-# 因在白名单中、从黑名单剔除的域名（共 416 条）
-# Full 中删除: 416 条
-# Lite 中删除: 289 条
+# 因在白名单中、从黑名单剔除的域名（共 409 条）
+# Full 中删除: 409 条
+# Lite 中删除: 282 条
 
-'+.1sapp.com'
 '+.360kuai.com'
 '+.40017.cn'
 '+.abtest3-misc-lf.zijieapi.com'
@@ -60,6 +59,7 @@
 '+.api.miui.security.xiaomi.com'
 '+.api.sec.intl.miui.com'
 '+.api.sec.miui.com'
+'+.api.tv.sohu.com'
 '+.app-measurement.com'
 '+.appcfg.v.qq.com'
 '+.appconf.heytapdownload.com'
@@ -77,6 +77,7 @@
 '+.bds.snssdk.com'
 '+.beacon-api.aliyuncs.com'
 '+.beaconcdn.qq.com'
+'+.bjfesdk.douyucdn.cn'
 '+.blockadblock.com'
 '+.bootcss.com'
 '+.browser.events.data.microsoft.com'
@@ -90,7 +91,6 @@
 '+.cc.map.qq.com'
 '+.cdn.ex.co'
 '+.cdn.ynuf.aliapp.org'
-'+.cfg.imtt.qq.com'
 '+.clarins.com.cn'
 '+.click.aliexpress.com'
 '+.click.aliyun.com'
@@ -157,7 +157,6 @@
 '+.entitlements.jwplayer.com'
 '+.ereg.adobe.com'
 '+.err.taobao.com'
-'+.etl-xlmc-ssl.sandai.net'
 '+.evtubescms.phncdn.com'
 '+.exponential.com'
 '+.feed-image.baidu.com'
@@ -181,11 +180,6 @@
 '+.gator.volces.com'
 '+.gdfp.gifshow.com'
 '+.gdtimg.com'
-'+.geo.query.yahoo.com'
-'+.get.x-link.pl'
-'+.gk.sina.cn'
-'+.gl.zle.com'
-'+.gma.alicdn.com'
 '+.google-analytics.com'
 '+.googleadservices.com'
 '+.googletagmanager.com'
@@ -215,7 +209,6 @@
 '+.ijinshan.com'
 '+.im-x.jd.com'
 '+.img.ssl.msdk.qq.com'
-'+.imop.com'
 '+.in.appcenter.ms'
 '+.inskinmedia.com'
 '+.iwan-s.video.qq.com'
