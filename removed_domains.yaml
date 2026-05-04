@@ -1,6 +1,6 @@
-# 因在白名单中、从黑名单剔除的域名（共 405 条）
-# Full 中删除: 405 条
-# Lite 中删除: 281 条
+# 因在白名单中、从黑名单剔除的域名（共 403 条）
+# Full 中删除: 403 条
+# Lite 中删除: 279 条
 
 '+.1sapp.com'
 '+.360kuai.com'
@@ -156,6 +156,7 @@
 '+.entitlements.jwplayer.com'
 '+.ereg.adobe.com'
 '+.err.taobao.com'
+'+.etl-xlmc-ssl.sandai.net'
 '+.evtubescms.phncdn.com'
 '+.exponential.com'
 '+.feed-image.baidu.com'
@@ -180,10 +181,6 @@
 '+.gdfp.gifshow.com'
 '+.gdtimg.com'
 '+.geo.query.yahoo.com'
-'+.get.x-link.pl'
-'+.gk.sina.cn'
-'+.gl.zle.com'
-'+.gma.alicdn.com'
 '+.google-analytics.com'
 '+.googleadservices.com'
 '+.googletagmanager.com'
@@ -211,7 +208,6 @@
 '+.ijinshan.com'
 '+.im-x.jd.com'
 '+.img.ssl.msdk.qq.com'
-'+.imop.com'
 '+.in.appcenter.ms'
 '+.inskinmedia.com'
 '+.iwan-s.video.qq.com'
@@ -388,8 +384,10 @@
 '+.umini.shujupie.com'
 '+.umiwi.com'
 '+.uri6.com'
+'+.uxip.meizu.com'
+'+.v.110route.cn'
+'+.v.miguvideo.com'
 '+.valuecommerce.com'
-'+.vcs.zijieapi.com'
 '+.w1.kskwai.com'
 '+.w8.com.cn'
 '+.wan.douyu.com'
