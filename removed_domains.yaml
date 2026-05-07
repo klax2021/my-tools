@@ -1,12 +1,10 @@
-# 因在白名单中、从黑名单剔除的域名（共 406 条）
-# Full 中删除: 406 条
-# Lite 中删除: 283 条
+# 因在白名单中、从黑名单剔除的域名（共 401 条）
+# Full 中删除: 401 条
+# Lite 中删除: 278 条
 
 '+.1sapp.com'
 '+.360kuai.com'
 '+.40017.cn'
-'+.abtest3-misc-lf.zijieapi.com'
-'+.ac.dun.163yun.com'
 '+.accscdn.m.taobao.com'
 '+.acs4baichuan.m.taobao.com'
 '+.act.vip.iqiyi.com'
@@ -182,6 +180,8 @@
 '+.geo.query.yahoo.com'
 '+.get.x-link.pl'
 '+.gk.sina.cn'
+'+.gl.zle.com'
+'+.gma.alicdn.com'
 '+.google-analytics.com'
 '+.googleadservices.com'
 '+.googletagmanager.com'
@@ -209,7 +209,6 @@
 '+.ijinshan.com'
 '+.im-x.jd.com'
 '+.img.ssl.msdk.qq.com'
-'+.in.appcenter.ms'
 '+.inskinmedia.com'
 '+.iwan-s.video.qq.com'
 '+.iyfbodn.com'
@@ -248,7 +247,6 @@
 '+.metrics.icloud.com'
 '+.metrics1-drcn.dt.dbankcloud.cn'
 '+.miaozhen.com'
-'+.mini.eastday.com'
 '+.minigame5-normal-hl.zijieapi.com'
 '+.mipcache.bdstatic.com'
 '+.mixer.sina.cn'
@@ -293,6 +291,7 @@
 '+.pingtas.qq.com'
 '+.pjtra.com'
 '+.platform.linkedin.com'
+'+.player.avplayer.com'
 '+.player.ex.co'
 '+.po.funshion.com'
 '+.polaris.zijieapi.com'
@@ -303,7 +302,6 @@
 '+.pos.baidu.com'
 '+.primis.tech'
 '+.pub.network'
-'+.publish-pic-cpu.baidu.com'
 '+.puds.ucweb.com'
 '+.push.m.youku.com'
 '+.pv.sohu.com'
@@ -331,10 +329,7 @@
 '+.shuzilm.cn'
 '+.sjh.baidu.com'
 '+.smartcard.apps.coloros.com'
-'+.snowflake.qq.com'
 '+.sobot.com'
-'+.sofire.baidu.com'
-'+.sofire.bdstatic.com'
 '+.soup.v.qq.com'
 '+.sovrn.com'
 '+.sp0.baidu.com'
