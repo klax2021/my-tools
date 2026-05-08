@@ -1,5 +1,5 @@
-# 因在白名单中、从黑名单剔除的域名（共 401 条）
-# Full 中删除: 401 条
+# 因在白名单中、从黑名单剔除的域名（共 403 条）
+# Full 中删除: 403 条
 # Lite 中删除: 278 条
 
 '+.1sapp.com'
@@ -261,6 +261,7 @@
 '+.mon.zijieapi.com'
 '+.monetag.com'
 '+.monsetting.toutiao.com'
+'+.mparticle.com'
 '+.mparticle.uc.cn'
 '+.mqtt.zhihu.com'
 '+.msg.video.qiyi.com'
@@ -302,6 +303,7 @@
 '+.pos.baidu.com'
 '+.primis.tech'
 '+.pub.network'
+'+.publish-pic-cpu.baidu.com'
 '+.puds.ucweb.com'
 '+.push.m.youku.com'
 '+.pv.sohu.com'
