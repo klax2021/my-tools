@@ -1,12 +1,11 @@
-# 因在白名单中、从黑名单剔除的域名（共 408 条）
-# Full 中删除: 408 条
-# Lite 中删除: 284 条
+# 因在白名单中、从黑名单剔除的域名（共 399 条）
+# Full 中删除: 399 条
+# Lite 中删除: 277 条
 
 '+.1sapp.com'
 '+.360kuai.com'
 '+.40017.cn'
 '+.abtest3-misc-lf.zijieapi.com'
-'+.ac.dun.163yun.com'
 '+.accscdn.m.taobao.com'
 '+.acs4baichuan.m.taobao.com'
 '+.act.vip.iqiyi.com'
@@ -117,7 +116,6 @@
 '+.cpu.baidu.com'
 '+.cpucdn.baidu.com'
 '+.cre.dp.sina.cn'
-'+.csi.gstatic.com'
 '+.d.toutiao.com'
 '+.d1z2jf7jlzjs58.cloudfront.net'
 '+.d2na2p72vtqyok.cloudfront.net'
@@ -179,11 +177,6 @@
 '+.gator.volces.com'
 '+.gdfp.gifshow.com'
 '+.gdtimg.com'
-'+.geo.query.yahoo.com'
-'+.get.x-link.pl'
-'+.gk.sina.cn'
-'+.gl.zle.com'
-'+.gma.alicdn.com'
 '+.google-analytics.com'
 '+.googleadservices.com'
 '+.googletagmanager.com'
@@ -211,7 +204,6 @@
 '+.ijinshan.com'
 '+.im-x.jd.com'
 '+.img.ssl.msdk.qq.com'
-'+.in.appcenter.ms'
 '+.inskinmedia.com'
 '+.iwan-s.video.qq.com'
 '+.iyfbodn.com'
@@ -392,7 +384,6 @@
 '+.v.miguvideo.com'
 '+.vali-g1.cp31.ott.cibntv.net'
 '+.valuecommerce.com'
-'+.vcs.zijieapi.com'
 '+.w1.kskwai.com'
 '+.w8.com.cn'
 '+.wan.douyu.com'
