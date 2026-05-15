@@ -1,6 +1,6 @@
-# 因在白名单中、从黑名单剔除的域名（共 413 条）
-# Full 中删除: 413 条
-# Lite 中删除: 288 条
+# 因在白名单中、从黑名单剔除的域名（共 415 条）
+# Full 中删除: 415 条
+# Lite 中删除: 290 条
 
 '+.1sapp.com'
 '+.360kuai.com'
@@ -217,6 +217,7 @@
 '+.img.ssl.msdk.qq.com'
 '+.in.appcenter.ms'
 '+.inskinmedia.com'
+'+.iwan-s.video.qq.com'
 '+.iyfbodn.com'
 '+.jpush.cn'
 '+.jspassport.ssl.qhimg.com'
@@ -336,6 +337,7 @@
 '+.shuzilm.cn'
 '+.sjh.baidu.com'
 '+.smartcard.apps.coloros.com'
+'+.snowflake.qq.com'
 '+.sobot.com'
 '+.sofire.baidu.com'
 '+.sofire.bdstatic.com'
