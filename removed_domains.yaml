@@ -1,6 +1,6 @@
 # 因在白名单中、从黑名单剔除的域名（共 415 条）
 # Full 中删除: 415 条
-# Lite 中删除: 290 条
+# Lite 中删除: 289 条
 
 '+.1sapp.com'
 '+.360kuai.com'
@@ -52,6 +52,7 @@
 '+.api-push.meizu.com'
 '+.api.device.xiaomi.net'
 '+.api.installer.xiaomi.com'
+'+.api.iplay.163.com'
 '+.api.jr.mi.com'
 '+.api.kingdata.ksyun.com'
 '+.api.kwaizt.com'
@@ -76,7 +77,6 @@
 '+.bds.snssdk.com'
 '+.beacon-api.aliyuncs.com'
 '+.beaconcdn.qq.com'
-'+.bjfesdk.douyucdn.cn'
 '+.blockadblock.com'
 '+.bootcss.com'
 '+.browser.events.data.microsoft.com'
@@ -215,6 +215,7 @@
 '+.ijinshan.com'
 '+.im-x.jd.com'
 '+.img.ssl.msdk.qq.com'
+'+.imop.com'
 '+.in.appcenter.ms'
 '+.inskinmedia.com'
 '+.iwan-s.video.qq.com'
@@ -338,7 +339,6 @@
 '+.sjh.baidu.com'
 '+.smartcard.apps.coloros.com'
 '+.snowflake.qq.com'
-'+.sobot.com'
 '+.sofire.baidu.com'
 '+.sofire.bdstatic.com'
 '+.soup.v.qq.com'
