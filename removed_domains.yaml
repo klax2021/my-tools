@@ -1,7 +1,8 @@
-# 因在白名单中、从黑名单剔除的域名（共 411 条）
-# Full 中删除: 411 条
-# Lite 中删除: 285 条
+# 因在白名单中、从黑名单剔除的域名（共 416 条）
+# Full 中删除: 416 条
+# Lite 中删除: 290 条
 
+'+.1sapp.com'
 '+.360kuai.com'
 '+.40017.cn'
 '+.abtest3-misc-lf.zijieapi.com'
@@ -70,8 +71,10 @@
 '+.audid-api.taobao.com'
 '+.awempire.com'
 '+.awin1.com'
+'+.badjs.weixinbridge.com'
 '+.baixing.com'
 '+.bdad.123pan.cn'
+'+.bds.snssdk.com'
 '+.beacon-api.aliyuncs.com'
 '+.beaconcdn.qq.com'
 '+.bjfesdk.douyucdn.cn'
@@ -215,6 +218,7 @@
 '+.img.ssl.msdk.qq.com'
 '+.imop.com'
 '+.in.appcenter.ms'
+'+.inskinmedia.com'
 '+.iwan-s.video.qq.com'
 '+.iyfbodn.com'
 '+.jpush.cn'
@@ -336,8 +340,6 @@
 '+.shuzilm.cn'
 '+.sjh.baidu.com'
 '+.smartcard.apps.coloros.com'
-'+.snowflake.qq.com'
-'+.sobot.com'
 '+.sofire.baidu.com'
 '+.sofire.bdstatic.com'
 '+.soup.v.qq.com'
@@ -394,8 +396,11 @@
 '+.umiwi.com'
 '+.uri6.com'
 '+.uxip.meizu.com'
+'+.v.110route.cn'
 '+.v.miguvideo.com'
+'+.vali-g1.cp31.ott.cibntv.net'
 '+.valuecommerce.com'
+'+.vcs.zijieapi.com'
 '+.w1.kskwai.com'
 '+.w8.com.cn'
 '+.wan.douyu.com'
