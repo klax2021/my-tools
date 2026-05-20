@@ -1,14 +1,16 @@
-# 因在白名单中、从黑名单剔除的域名（共 416 条）
-# Full 中删除: 416 条
-# Lite 中删除: 290 条
+# 因在白名单中、从黑名单剔除的域名（共 417 条）
+# Full 中删除: 417 条
+# Lite 中删除: 291 条
 
 '+.1sapp.com'
 '+.360kuai.com'
 '+.40017.cn'
 '+.abtest3-misc-lf.zijieapi.com'
+'+.ac.dun.163yun.com'
 '+.accscdn.m.taobao.com'
 '+.acs4baichuan.m.taobao.com'
 '+.act.vip.iqiyi.com'
+'+.activity.browser.intl.miui.com'
 '+.ad-log-upload.mihoyo.com'
 '+.ad-maven.com'
 '+.ad.12306.cn'
@@ -310,7 +312,6 @@
 '+.port.sec.miui.com'
 '+.pos.baidu.com'
 '+.pub.network'
-'+.publish-pic-cpu.baidu.com'
 '+.puds.ucweb.com'
 '+.push.m.youku.com'
 '+.pv.sohu.com'
