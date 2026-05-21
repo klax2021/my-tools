@@ -42,7 +42,7 @@ def download_cdn_txt():
 def convert_to_mrs(input_file, output_file):
     print(f"转换为 MRS: {input_file} → {output_file}")
     subprocess.run([
-        "~/.cache/mihomo/mihomo",
+        os.path.expanduser("~/.cache/mihomo/mihomo"),  # ←←← 这里是关键修改！
         "convert-ruleset",
         "domain",
         "yaml" if input_file.endswith(".yaml") else "text",
