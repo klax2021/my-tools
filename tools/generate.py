@@ -125,6 +125,29 @@ def main():
     convert_to_mrs(cdn_txt, os.path.join(RULE_DIR, "cdn.mrs"))
 
     print("全部规则生成完成！")
+        # === 输出构建统计到 JSON 文件 ===
+    import json
+
+    # 读取 CDN 行数（跳过空行和注释）
+    cdn_count = 0
+    with open(cdn_txt, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#"):
+                cdn_count += 1
+
+    # 写入统计
+    stats = {
+        "adblock_full_count": len(clean_full),
+        "adblock_lite_count": len(clean_lite),
+        "cdn_count": cdn_count,
+        "removed_full_count": len(removed_full),
+        "removed_lite_count": len(removed_lite),
+        "removed_unique_count": len(all_removed),
+    }
+    with open("rules_build_stats.json", "w", encoding="utf-8") as f:
+        json.dump(stats, f, ensure_ascii=False)
+
 
 if __name__ == "__main__":
     main()
