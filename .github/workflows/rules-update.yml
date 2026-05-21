@@ -1,0 +1,83 @@
+name: Rules Update (Adblock + CDN)
+
+on:
+  schedule:
+    - cron: '0 4 * * *'   # 每天 04:00 自动运行
+  workflow_dispatch:       # 手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # 缓存 mihomo 内核
+      - name: Cache mihomo
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/mihomo
+          key: mihomo-v1.19.21-linux-amd64
+
+      # 下载 mihomo（缓存命中则跳过）
+      - name: Download mihomo v1
+        run: |
+          mkdir -p ~/.cache/mihomo
+          if [ ! -f ~/.cache/mihomo/mihomo ]; then
+            echo "Cache miss, downloading mihomo..."
+            curl -L -o ~/.cache/mihomo/mihomo.gz \
+              https://github.com/MetaCubeX/mihomo/releases/download/v1.19.21/mihomo-linux-amd64-v1-v1.19.21.gz
+            gunzip ~/.cache/mihomo/mihomo.gz
+            chmod +x ~/.cache/mihomo/mihomo
+          else
+            echo "Cache hit, skip download"
+          fi
+
+      # 验证版本
+      - name: Test mihomo v1
+        run: ~/.cache/mihomo/mihomo -v
+
+      # Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 安装 requests
+      - name: Install requests
+        run: pip install requests
+
+      # 运行统一生成脚本（广告 + CDN）
+      - name: 生成规则 (Adblock + CDN)
+        run: python tools/generate.py
+
+      # 转换 YAML → MRS（广告）
+      - name: 转换广告 YAML → MRS
+        run: |
+          echo "=== 转换 Full ==="
+          ~/.cache/mihomo/mihomo convert-ruleset domain yaml rules/adblock-clean-full.yaml rules/adblock-clean-full.mrs
+
+          echo "=== 转换 Lite ==="
+          ~/.cache/mihomo/mihomo convert-ruleset domain yaml rules/adblock-clean-lite.yaml rules/adblock-clean-lite.mrs
+
+      # 转换 CDN TXT → MRS
+      - name: 转换 CDN TXT → MRS
+        run: |
+          echo "=== 转换 CDN ==="
+          ~/.cache/mihomo/mihomo convert-ruleset domain text rules/cdn.txt rules/cdn.mrs
+
+      # 自动提交更新
+      - name: Commit & Push 更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rules/
+          if git diff --staged --quiet; then
+            echo "没有变化，跳过提交"
+          else
+            git commit -m "chore: 自动更新规则 (Adblock + CDN)"
+            git push
+          fi
