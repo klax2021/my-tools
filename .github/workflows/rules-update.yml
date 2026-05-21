@@ -2,8 +2,8 @@ name: Rules Update (Adblock + CDN)
 
 on:
   schedule:
-    - cron: '0 4 * * *'   # 每天 04:00 自动运行
-  workflow_dispatch:       # 手动触发
+    - cron: '0 4 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -15,15 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 缓存 mihomo 内核
+      # 缓存 mihomo（仍然保留，加速）
       - name: Cache mihomo
         uses: actions/cache@v4
         with:
           path: ~/.cache/mihomo
           key: mihomo-v1.19.21-linux-amd64
 
-      # 下载 mihomo（缓存命中则跳过）
-      - name: Download mihomo v1
+      # ✅ 下载并安装 mihomo（确保 PATH 可用）
+      - name: Install mihomo
         run: |
           mkdir -p ~/.cache/mihomo
           if [ ! -f ~/.cache/mihomo/mihomo ]; then
@@ -35,10 +35,12 @@ jobs:
           else
             echo "Cache hit, skip download"
           fi
+          # ✅ 关键：放入 PATH
+          sudo ln -sf ~/.cache/mihomo/mihomo /usr/local/bin/mihomo
 
-      # 验证版本
-      - name: Test mihomo v1
-        run: ~/.cache/mihomo/mihomo -v
+      # 验证 mihomo
+      - name: Verify mihomo
+        run: mihomo -v
 
       # Python 环境
       - name: Set up Python
@@ -46,30 +48,29 @@ jobs:
         with:
           python-version: '3.11'
 
-      # 安装 requests
       - name: Install requests
         run: pip install requests
 
-      # 运行统一生成脚本（广告 + CDN）
+      # 生成规则
       - name: 生成规则 (Adblock + CDN)
         run: python tools/generate.py
 
-      # 转换 YAML → MRS（广告）
+      # 转换广告规则
       - name: 转换广告 YAML → MRS
         run: |
           echo "=== 转换 Full ==="
-          ~/.cache/mihomo/mihomo convert-ruleset domain yaml rules/adblock-clean-full.yaml rules/adblock-clean-full.mrs
+          mihomo convert-ruleset domain yaml rules/adblock-clean-full.yaml rules/adblock-clean-full.mrs
 
           echo "=== 转换 Lite ==="
-          ~/.cache/mihomo/mihomo convert-ruleset domain yaml rules/adblock-clean-lite.yaml rules/adblock-clean-lite.mrs
+          mihomo convert-ruleset domain yaml rules/adblock-clean-lite.yaml rules/adblock-clean-lite.mrs
 
-      # 转换 CDN TXT → MRS
+      # 转换 CDN
       - name: 转换 CDN TXT → MRS
         run: |
           echo "=== 转换 CDN ==="
-          ~/.cache/mihomo/mihomo convert-ruleset domain text rules/cdn.txt rules/cdn.mrs
+          mihomo convert-ruleset domain text rules/cdn.txt rules/cdn.mrs
 
-      # 自动提交更新
+      # 提交
       - name: Commit & Push 更新
         run: |
           git config user.name "github-actions[bot]"
