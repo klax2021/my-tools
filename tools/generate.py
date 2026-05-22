@@ -1,6 +1,7 @@
 import requests
 import subprocess
 import os
+import json
 
 RULE_DIR = "rules"
 
@@ -26,26 +27,13 @@ def load_yaml_payload(url):
                 payload.append(stripped)
     return payload
 
-def download_cdn_txt():
-    url = "https://ruleset.skk.moe/Clash/domainset/cdn.txt"
-    print(f"下载 CDN 域名集: {url}")
-    r = requests.get(url, timeout=120)
-    r.raise_for_status()
-
-    path = os.path.join(RULE_DIR, "cdn.txt")
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(r.text)
-
-    print(f"已保存: {path}")
-    return path
-
 def convert_to_mrs(input_file, output_file):
     print(f"转换为 MRS: {input_file} → {output_file}")
     subprocess.run([
-        os.path.expanduser("~/.cache/mihomo/mihomo"),  # ←←← 这里是关键修改！
+        os.path.expanduser("~/.cache/mihomo/mihomo"),
         "convert-ruleset",
         "domain",
-        "yaml" if input_file.endswith(".yaml") else "text",
+        "yaml",
         input_file,
         output_file
     ], check=True)
@@ -114,29 +102,45 @@ def main():
 
     print("广告规则生成完成")
 
-    # 下载 CDN TXT
-    cdn_txt = download_cdn_txt()
+    # === 关键修改：下载 CDN 并生成带完整注释的 cdn.yaml（不保存 .txt）===
+    cdn_url = "https://ruleset.skk.moe/Clash/domainset/cdn.txt"
+    print(f"下载并生成带完整注释的 CDN YAML: {cdn_url}")
+    r = requests.get(cdn_url, timeout=120)
+    r.raise_for_status()
 
-    # 转换广告规则为 MRS
+    cdn_yaml = os.path.join(RULE_DIR, "cdn.yaml")
+    lines = r.text.splitlines()
+    payload_lines = []
+    cdn_count = 0
+
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            # 空行 → 转为空注释行（YAML 序列中不能有裸空行）
+            payload_lines.append("  #")
+        elif stripped.startswith('#'):
+            # 注释行 → 保留原内容，缩进两个空格
+            payload_lines.append(f"  {line.rstrip()}")
+        else:
+            # 域名行 → 转为 - 'xxx'
+            payload_lines.append(f"  - '{stripped}'")
+            cdn_count += 1
+
+    with open(cdn_yaml, "w", encoding="utf-8") as f:
+        f.write("payload:\n")
+        for pline in payload_lines:
+            f.write(pline + "\n")
+
+    print(f"CDN 规则已保存为带完整注释的 YAML: {cdn_yaml} (共 {cdn_count} 条)")
+
+    # 转换所有 YAML 为 MRS（现在全部是 .yaml）
     convert_to_mrs(full_yaml, os.path.join(RULE_DIR, "adblock-clean-full.mrs"))
     convert_to_mrs(lite_yaml, os.path.join(RULE_DIR, "adblock-clean-lite.mrs"))
-
-    # 转换 CDN TXT 为 MRS
-    convert_to_mrs(cdn_txt, os.path.join(RULE_DIR, "cdn.mrs"))
+    convert_to_mrs(cdn_yaml, os.path.join(RULE_DIR, "cdn.mrs"))
 
     print("全部规则生成完成！")
-        # === 输出构建统计到 JSON 文件 ===
-    import json
 
-    # 读取 CDN 行数（跳过空行和注释）
-    cdn_count = 0
-    with open(cdn_txt, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line and not line.startswith("#"):
-                cdn_count += 1
-
-    # 写入统计
+    # === 输出构建统计到 JSON 文件 ===
     stats = {
         "adblock_full_count": len(clean_full),
         "adblock_lite_count": len(clean_lite),
