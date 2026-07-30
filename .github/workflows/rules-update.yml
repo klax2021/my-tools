@@ -1,4 +1,4 @@
-name: Rules Update (Adblock + CDN)
+name: Rules Update (合并去广告排除白名单)
 
 on:
   schedule:
