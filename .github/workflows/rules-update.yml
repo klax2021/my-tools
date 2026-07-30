@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   update:
@@ -74,3 +75,12 @@ jobs:
             git commit -m "chore: 自动更新规则与 README 统计"
             git push
           fi
+
+      # 运行完毕后清理旧日志，保持仓库整洁
+      - name: Clean Old Rules Update Runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 5
