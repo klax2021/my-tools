@@ -604,6 +604,7 @@ ads-thanhnien-vn.cdn.ampproject.org
 ads-ttp2.tiktokw.eu.edgesuite.net
 ads-ttp2.us.tiktok.com
 ads-union.jd.com
+ads.adctv.com.edgesuite.net
 ads.apple.com
 ads.bing.com
 ads.bridgetrack.com.edgesuite.net
@@ -1049,7 +1050,6 @@ c.youdao.com
 c.za.msn.com
 c1.microsoft.com
 c6.edgesuite.net
-cac-visio-telemetry.officeapps.live.com
 caclick.baidu.com
 cactus.jd.com
 cad.youku.com
@@ -1152,9 +1152,6 @@ config1.cmpassport.com
 config2.cmpassport.com
 conn-service-gl-01.allawntech.com
 connatix.com
-console.bce.baidu.com
-content-analyticsadmin.googleapis.com
-content-analyticsdata.googleapis.com
 content.ingbank.pl
 content.yieldmanager.edgesuite.net
 contributor.google.com
@@ -1254,7 +1251,6 @@ dcads.sina.com.cn
 dcbbwymp1bhlf.cloudfront.net
 dd.browser.360.cn
 de.pandora.xiaomi.com
-dec-visio-telemetry.officeapps.live.com
 deliver.kuwo.cn
 delivery.porn.com
 destyy.com
@@ -1270,6 +1266,7 @@ dianying-1304791696.cos.ap-shanghai.myqcloud.com
 dig.lianjia.com
 dig.zjurl.cn
 dingbu.bj.bcebos.com
+disk.360.yandex.ru
 dl-vip.bav.baidu.com
 dl.ops.baidu.com
 dl2.bav.baidu.com
@@ -1409,7 +1406,6 @@ fido.xhamster.com
 file.daihuo.qq.com
 findapi.micloud.xiaomi.net
 fingerprintjs.com
-firebasecrashlytics.googleapis.com
 firebasedynamiclinks.googleapis.com
 firebaselogging-pa.googleapis.com
 firebaselogging.googleapis.com
@@ -1823,6 +1819,7 @@ logtake.weidian.com
 logtj.kugou.com
 logwebs.kugou.com
 lookup.api.bsb.baidu.com
+lssmag.github.io
 lstat.youku.com
 luimg.baidu.com
 lvip.youku.com
@@ -2042,6 +2039,7 @@ notes-analytics-events.apple.com
 notice.game.xiaomi.com
 notifications.googleapis.com
 notify-bugsnag.docker.com
+nowaszkola.github.io
 ns2.xidian.edu.cn
 nsclickvideo.baidu.com
 nsm.dell.com
@@ -2192,7 +2190,6 @@ pos.baidu.com
 posthog.modrinth.com
 posthog.slack.com
 powerpoint-telemetry.officeapps.live.com
-ppc-excel-telemetry.officeapps.live.com
 ppc-word-telemetry.officeapps.live.com
 pr.nss.netease.com
 prd-usw2-requestattribution-iad.apple.com
@@ -2305,6 +2302,7 @@ rumt-zh.com
 s.bdstatic.com
 s.f.360.cn
 s.img.mix.sina.com.cn
+s.jimdo.com
 s.p.youku.com
 s0-2mdn-net.l.google.com
 s2.youtube.com
@@ -2538,7 +2536,6 @@ static-addtoany-com.cdn.ampproject.org
 static-doubleclick-net.l.google.com
 static-s.iqiyi.com
 static-ssp.yidianzixun.com
-static.ads.triptease.io.cdn.cloudflare.net
 static.fengkongcloud.com
 static.g.iqiyi.com
 static.ptqy.gitv.tv
@@ -2752,7 +2749,6 @@ uee.me
 ug.baidu.com
 ug.snssdk.com
 ugcup.music.qq.com
-ukc-visio-telemetry.officeapps.live.com
 ulog.imap.baidu.com
 umami.webtor.io
 umc.danuoyi.alicdn.com
@@ -2821,6 +2817,7 @@ uxip.meizu.com
 uz-analysis.akamaized.net
 v.110route.cn
 v.miguvideo.com
+v.poki-cdn.com
 v10c.events.data.microsoft.com
 v16-ad.ap4r.com.edgesuite.net
 v16-ad.byteoversea.com.edgesuite.net
@@ -2846,7 +2843,6 @@ video.kts.g.mi.com
 video.market.xiaomi.com
 video.streamtape.com
 view.zijieapi.com
-visio-telemetry.officeapps.live.com
 visualscience.external.bbc.co.uk
 vkcdnservice.appspot.com.storage.googleapis.com
 vlive.qqvideo.tc.qq.com
