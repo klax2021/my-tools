@@ -712,7 +712,6 @@ adv.ettoday.net
 adv.sec.miui.com
 adv.wp.pl
 advert-prod.hyrz.qq.com
-advert-statistic-vip.xunlei.com
 advertise.microsoft.com
 advertising-api-eu.amazon.com
 advertising-api-fe.amazon.com
@@ -1240,6 +1239,7 @@ data.msn.com
 data.mx.nfl.com
 data.news.paypal.com
 data.newsletter.paypal.com
+data.notify.nfl.com
 data.sec.miui.com
 data.service.paypal.com
 data.streamtape.com
@@ -1789,6 +1789,7 @@ log17-normal-useast1a.tiktokv.com
 log19-normal-alisg.tiktokv.com
 log19-normal-useast1a.tiktokv.com
 log19-normal-useast2a.tiktokv.com
+log19-normal.tiktokv.com
 log2.cmpassport.com
 log2.sina.cn
 log2.spotify.com
@@ -1819,7 +1820,6 @@ logtake.weidian.com
 logtj.kugou.com
 logwebs.kugou.com
 lookup.api.bsb.baidu.com
-lssmag.github.io
 lstat.youku.com
 luimg.baidu.com
 lvip.youku.com
@@ -2039,7 +2039,6 @@ notes-analytics-events.apple.com
 notice.game.xiaomi.com
 notifications.googleapis.com
 notify-bugsnag.docker.com
-nowaszkola.github.io
 ns2.xidian.edu.cn
 nsclickvideo.baidu.com
 nsm.dell.com
@@ -2066,6 +2065,7 @@ olekgaiha2011-sketch.github.io
 omgid.qq.com
 omgmta1.qq.com
 omtrdc.net
+online-logger.webapp.163.com
 open.snssdk.com
 openapi-news.meizu.com
 openapi.guanjia.qq.com
@@ -2302,7 +2302,6 @@ rumt-zh.com
 s.bdstatic.com
 s.f.360.cn
 s.img.mix.sina.com.cn
-s.jimdo.com
 s.p.youku.com
 s0-2mdn-net.l.google.com
 s2.youtube.com
@@ -2375,7 +2374,6 @@ sentry-cliapps.ottcds.peacocktv.com
 sentry-cliapps.ottcds.peacocktv.com.edgesuite.net
 sentry-openfm-frontend.wp.pl
 sentry-pilotwp-frontend.wp.pl
-sentry-youxi.xunlei.com
 sentry.101soundboards.com
 sentry.amazon.com
 sentry.d.mi.com
@@ -2383,7 +2381,6 @@ sentry.epay.163.com
 sentry.gitcode.com
 sentry.hcaptcha.com
 sentry.kuaishou.com
-sentry.kugou.com
 sentry.netease.com
 sentry.qt.qq.com
 sentry.tools.riverside.fm
@@ -2536,6 +2533,7 @@ static-addtoany-com.cdn.ampproject.org
 static-doubleclick-net.l.google.com
 static-s.iqiyi.com
 static-ssp.yidianzixun.com
+static.ads.triptease.io.cdn.cloudflare.net
 static.fengkongcloud.com
 static.g.iqiyi.com
 static.ptqy.gitv.tv
@@ -2815,6 +2813,7 @@ uu.qq.com
 uve.weibo.com
 uxip.meizu.com
 uz-analysis.akamaized.net
+uzzf.com
 v.110route.cn
 v.miguvideo.com
 v.poki-cdn.com
