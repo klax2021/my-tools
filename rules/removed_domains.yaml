@@ -598,6 +598,7 @@ ads-api.x.com
 ads-bidder-api.twitter.com
 ads-dev.pinterest.com
 ads-interfaces.sc-cdn.net
+ads-jp.tiktok.com
 ads-ru.tiktok.com
 ads-sg.tiktok.com
 ads-thanhnien-vn.cdn.ampproject.org
@@ -824,7 +825,6 @@ analytics.twitter.com
 analytics.us.tiktok.com
 analytics.us.tiktok.com.edgesuite.net
 analytics.webproxy.idc.chinamobile.com
-analytics.x.com
 analytics.yinxiang.com
 analytics.ynu.edu.cn
 analytics.youtube.com
@@ -1049,6 +1049,7 @@ c.youdao.com
 c.za.msn.com
 c1.microsoft.com
 c6.edgesuite.net
+cac-visio-telemetry.officeapps.live.com
 caclick.baidu.com
 cactus.jd.com
 cad.youku.com
@@ -1061,7 +1062,6 @@ cbjs.baidu.com
 cc.m.jd.com
 cc.map.qq.com
 cdn-bongdadem-net.cdn.ampproject.org
-cdn-eu.clickdimensions.com
 cdn-guile.akamaized.net
 cdn-ketchapp.akamaized.net
 cdn.ex.co
@@ -1151,6 +1151,9 @@ config1.cmpassport.com
 config2.cmpassport.com
 conn-service-gl-01.allawntech.com
 connatix.com
+console.bce.baidu.com
+content-analyticsadmin.googleapis.com
+content-analyticsdata.googleapis.com
 content.ingbank.pl
 content.yieldmanager.edgesuite.net
 contributor.google.com
@@ -1705,6 +1708,7 @@ lightning.cnn.com
 link.theatlantic.com
 link.tv.cbs.com
 link.us.paramountplus.com
+linkconnector.com
 linkeye.ximalaya.com
 links.br.discoveryplus.com
 links.ca.discoveryplus.com
@@ -1820,6 +1824,7 @@ logtake.weidian.com
 logtj.kugou.com
 logwebs.kugou.com
 lookup.api.bsb.baidu.com
+lssmag.github.io
 lstat.youku.com
 luimg.baidu.com
 lvip.youku.com
@@ -1854,7 +1859,6 @@ mars.jd.com
 masdk.3g.qq.com
 masdkv6.3g.qq.com
 material.xl7.xunlei.com
-matomo.garmin.com.cdn.cloudflare.net
 matwbp.iask.sina.com.cn
 mazu.3g.qq.com
 mazu.m.qq.com
@@ -1894,6 +1898,7 @@ metrica.yandex.ru
 metrics-cbslocal-com.cdn.ampproject.org
 metrics-config.icloud.com
 metrics-content.duckduckgo.com
+metrics.artists.amazon.com
 metrics.atlascopco.com.cdn.cloudflare.net
 metrics.cbc.youtube.mercedes-benz.com
 metrics.cnn.com
@@ -2039,6 +2044,7 @@ notes-analytics-events.apple.com
 notice.game.xiaomi.com
 notifications.googleapis.com
 notify-bugsnag.docker.com
+nowaszkola.github.io
 ns2.xidian.edu.cn
 nsclickvideo.baidu.com
 nsm.dell.com
@@ -2152,6 +2158,7 @@ pixel.spotify.com
 pixel.wp.pl
 pixels.spotify.com
 pjtra.com
+pl.cp31.ott.cibntv.net
 pl.thecontentserver.com.cdn.cloudflare.net
 platform.linkedin.com
 player-lg.youku.com
@@ -2190,6 +2197,7 @@ pos.baidu.com
 posthog.modrinth.com
 posthog.slack.com
 powerpoint-telemetry.officeapps.live.com
+ppc-excel-telemetry.officeapps.live.com
 ppc-word-telemetry.officeapps.live.com
 pr.nss.netease.com
 prd-usw2-requestattribution-iad.apple.com
@@ -2302,6 +2310,7 @@ rumt-zh.com
 s.bdstatic.com
 s.f.360.cn
 s.img.mix.sina.com.cn
+s.jimdo.com
 s.p.youku.com
 s0-2mdn-net.l.google.com
 s2.youtube.com
@@ -2377,10 +2386,13 @@ sentry-pilotwp-frontend.wp.pl
 sentry.101soundboards.com
 sentry.amazon.com
 sentry.d.mi.com
+sentry.d.xiaomi.net
+sentry.eks.hoyoverse.com
 sentry.epay.163.com
 sentry.gitcode.com
 sentry.hcaptcha.com
 sentry.kuaishou.com
+sentry.music.163.com
 sentry.netease.com
 sentry.qt.qq.com
 sentry.tools.riverside.fm
@@ -2390,6 +2402,7 @@ sentry.zhuanzhuan.com
 sentry2.lx.netease.com
 server.events.data.microsoft.com
 serveraddr.service.kugou.com
+service-analytics.warbyparker.com.cdn.cloudflare.net
 servicecut.meizu.com
 sessions-bugsnag.docker.com
 sestat.baidu.com
@@ -2468,7 +2481,6 @@ sponsored-ads-eu.amazon.ae
 sponsored-ads-eu.amazon.nl
 sponsored-ads-eu.amazon.pl
 sponsored-ads-eu.amazon.sa
-sponsored-ads-eu.amazon.se
 sponsored-ads.amazon.ae
 sponsored-ads.amazon.ca
 sponsored-ads.amazon.co.jp
@@ -2483,7 +2495,6 @@ sponsored-ads.amazon.es
 sponsored-ads.amazon.fr
 sponsored-ads.amazon.in
 sponsored-ads.amazon.it
-sponsored-ads.amazon.sa
 sponsored-ads.amazon.sg
 spynet2.microsoft.com
 spynetalt.microsoft.com
@@ -2747,6 +2758,7 @@ uee.me
 ug.baidu.com
 ug.snssdk.com
 ugcup.music.qq.com
+ukc-visio-telemetry.officeapps.live.com
 ulog.imap.baidu.com
 umami.webtor.io
 umc.danuoyi.alicdn.com
@@ -2831,7 +2843,6 @@ vcl-brain.snssdk.com
 vconf.f.360.cn
 vcs.zijieapi.com
 vda.17173.com
-vdmisgood.github.io
 vf.startpage.com
 vg05-met-vgwort-de.cdn.ampproject.org
 vg08-met-vgwort-de.cdn.ampproject.org
@@ -2842,6 +2853,7 @@ video.kts.g.mi.com
 video.market.xiaomi.com
 video.streamtape.com
 view.zijieapi.com
+visio-telemetry.officeapps.live.com
 visualscience.external.bbc.co.uk
 vkcdnservice.appspot.com.storage.googleapis.com
 vlive.qqvideo.tc.qq.com
@@ -2948,6 +2960,7 @@ z.cdp-dev.cnn.com
 zazhipu.com
 zhanzhang.toutiao.com
 zhihu-web-analytics.zhihu.com
+zks1-ib.msn.com
 zmetrics.msn.com
 zne1-ib.msn.com
 zne2-ib.msn.com
