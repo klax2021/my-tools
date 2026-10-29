@@ -1,8 +1,8 @@
 # 干净广告规则 Lite
 # 规则生成来源: 217heidai-lite + 10007 (精简过滤版)
 # 自动剔除冲突/白名单: 1356 条
-# 最终生效规则: 7132 条
-# 更新时间: 2026-10-28 10:25:11 UTC
+# 最终生效规则: 7124 条
+# 更新时间: 2026-10-29 10:45:05 UTC
 # ----------------------------------------
 payload:
   - '+.kwflvcdn.000dn.com'
@@ -1270,7 +1270,6 @@ payload:
   - '+.app-analytics-services-att.com'
   - '+.app-analytics-services.com'
   - '+.appdriver.cn'
-  - '+.www.appdriver.com.cn'
   - '+.fpb1.apple886.com'
   - '+.applk.cn'
   - '+.st.appsad.cn'
@@ -1392,9 +1391,7 @@ payload:
   - '+.log.banjixiaoguanjia.com'
   - '+.sentry.banjixiaoguanjia.com'
   - '+.sentry.bankneo.co.id'
-  - '+.active.baofeng.com'
   - '+.midinfo.baofeng.com'
-  - '+.config.baofeng.net'
   - '+.ploy.baofeng.net'
   - '+.a.baomihua.com'
   - '+.bartender.cc'
@@ -1933,7 +1930,6 @@ payload:
   - '+.dadde.cn'
   - '+.dadzz.cn'
   - '+.dagwi.cn'
-  - '+.dajars.shop'
   - '+.daliantong.com.cn'
   - '+.mcds.dalyfeds.com'
   - '+.profiler-collector.dalyfeds.com'
@@ -2124,7 +2120,6 @@ payload:
   - '+.tracking.ksztone.com.eo.dnse2.com'
   - '+.posthog.casinoplus.top.eo.dnse3.com'
   - '+.akamai-apigateway-gio-analytics.tesla.cn.eo.dnse4.com'
-  - '+.ads-vp5-xhscdn.tliveapp.com.cdn.dnsv1.com'
   - '+.beacon.cdn.qq.com.cdn.dnsv1.com'
   - '+.dnyzbp.cn'
   - '+.do-global.com'
@@ -4912,7 +4907,6 @@ payload:
   - '+.qls7v6jd3.com'
   - '+.qlscg0qnz.com'
   - '+.a6-remad.qm989.com'
-  - '+.t-remad.qm989.com'
   - '+.logger.qmai.cn'
   - '+.qmj89db55u.com'
   - '+.qmtrnqp900.com'
@@ -4961,10 +4955,8 @@ payload:
   - '+.api-access.pangolin-sdk-toutiao.com.queniuyk.com'
   - '+.log-api.pangolin-sdk-toutiao.com.queniuyk.com'
   - '+.tnc3-alisc1.zijieapi.com.queniuyk.com'
-  - '+.quiavo.shop'
   - '+.chat.quickcep.com'
   - '+.qujishu.com'
-  - '+.m.qulishi.com'
   - '+.sbbd1.qulishi.com'
   - '+.bc.qunar.com'
   - '+.log.flight.qunar.com'

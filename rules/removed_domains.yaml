@@ -36,12 +36,14 @@
 1250425534-doradztwo.storage.googleapis.com
 1251455968-doradztwo.storage.googleapis.com
 12551-1311572332.cos.ap-shanghai.myqcloud.com
+1oavsblobprodcus350.blob.core.windows.net
 1sapp.com
 2220875948-doradztwo.storage.googleapis.com
 2530276768-doradztwo.storage.googleapis.com
 2g312kn32qfy-1323053341.cos.ap-bangkok.myqcloud.com
 32e1dff65ea4eb3627ed-f1ecc94c86a56d3e42e512fcfd192886.r6.cf1.rackcdn.com
 360kuai.com
+37bvsblobprodcus311.blob.core.windows.net
 3975.com
 40017.cn
 4290042901-doradztwo.storage.googleapis.com
@@ -621,7 +623,6 @@ ads.hulu.com.edgesuite.net
 ads.jetpackdigital.com.akamaized.net
 ads.maxstream.video
 ads.microsoft.com
-ads.midwayusa.com
 ads.msn.com
 ads.music.126.net
 ads.nocorspolicy.com
@@ -1070,12 +1071,15 @@ cdn1sitescout.edgesuite.net
 cdn3.hentaihand.com
 cee1.iteye.com
 ceshi127722.obs.cn-north-4.myhuaweicloud.com
+ceuswatcab01.blob.core.windows.net
+ceuswatcab02.blob.core.windows.net
 cevanu.ripley.com.pe.cdn.cloudflare.net
 cfg.imtt.qq.com
 cfgc.zztfly.com
 cgi.pub.qq.com
 channel.m.163.com
 chat1.jd.com
+cheezwhiz.z9.web.core.windows.net
 chemdraw.com.cn
 citi.bridgetrack.com.edgesuite.net
 cl.canva.com
@@ -1108,8 +1112,10 @@ clientmetrics-pa.googleapis.com
 clienttracing-pa.googleapis.com
 clouderrorreporting.googleapis.com
 cloudflareinsights.com
+cltgtstor001.blob.core.windows.net
 cluster.xhspot.com
 cm.baidu.com
+cm.dmp.360.cn
 cm.passport.iqiyi.com
 cms.ucweb.com
 cnn.dyn.cnn.com
@@ -1269,7 +1275,6 @@ dianying-1304791696.cos.ap-shanghai.myqcloud.com
 dig.lianjia.com
 dig.zjurl.cn
 dingbu.bj.bcebos.com
-disk.360.yandex.ru
 dl-vip.bav.baidu.com
 dl.ops.baidu.com
 dl2.bav.baidu.com
@@ -1305,6 +1310,7 @@ downmobile.kugou.com
 dp.im.weibo.cn
 dp3.qq.com
 dpbolvw.net
+dragate-cn.dc.heytapmobi.com
 dreport.meituan.net
 drupalmetrics.ppg.apple.com
 ds-aksb-a.akamaihd.net.edgesuite.net
@@ -1326,6 +1332,8 @@ e.baidu.com
 e.kuaishou.com
 e.mi.com
 e.qq.com
+eaus2watcab01.blob.core.windows.net
+eaus2watcab02.blob.core.windows.net
 ebook.meizu.com
 ebook.res.meizu.com
 eclick.baidu.com
@@ -1386,6 +1394,7 @@ experiments.apple.com
 ext.baidu.com
 extlog.snssdk.com
 f.convertkit.com.cdn.cloudflare.net
+faduciwup.z4.web.core.windows.net
 fallback.cstm-ads.nbcuni.com.cdn.cloudflare.net
 fanxing.kugou.com
 fastclick.com.edgesuite.net
@@ -1451,6 +1460,7 @@ freebitco.in
 freeform-events.apple.com
 freewheel-mtgx-tv.akamaized.net
 frontier.capcutw.us.edgesuite.net
+fsuseaad1.blob.core.windows.net
 functional.events.data.microsoft.com
 fundingchoicesmessages.google.com
 fuseplatform.net
@@ -1629,6 +1639,7 @@ ingest.appcenter.ms
 ingest.webcol.sdp.peacocktv.com
 ini.update.360safe.com
 insight.ucweb.com
+insitez.blob.core.windows.net
 inskinmedia.com
 install.kugou.com
 instant-e-app-for-campaign.github.io
@@ -2073,12 +2084,14 @@ omgmta1.qq.com
 omtrdc.net
 online-logger.webapp.163.com
 open.snssdk.com
+open8video.blob.core.windows.net
 openapi-news.meizu.com
 openapi.guanjia.qq.com
 openapi.vip.ptqy.gitv.tv
 openjmacs.m.taobao.com
 openmonitor.alipay-eco.com
 openrcv.baidu.com
+optanon.blob.core.windows.net
 optimize.google.com
 orange-dc.youku.com
 orbit.jd.com
@@ -2153,6 +2166,7 @@ pipe.aria.microsoft.com
 piwik-bz.apple.com
 pixel-node-europosit-com.akamaized.net
 pixel-static.spotify.com
+pixel.asksuite.com.cdn.cloudflare.net
 pixel.facebook.com
 pixel.spotify.com
 pixel.wp.pl
@@ -2198,6 +2212,7 @@ posthog.modrinth.com
 posthog.slack.com
 powerpoint-telemetry.officeapps.live.com
 ppc-excel-telemetry.officeapps.live.com
+ppc-powerpoint-telemetry.officeapps.live.com
 ppc-word-telemetry.officeapps.live.com
 pr.nss.netease.com
 prd-usw2-requestattribution-iad.apple.com
@@ -2225,6 +2240,7 @@ push.res.meizu.com
 push.tv.sohu.com
 push.zhanzhang.baidu.com
 pv.sohu.com
+pvstat.html5.qq.com
 px-intl.ucweb.com
 px.pandora.com
 px.washingtonpost.com.cdn.cloudflare.net
@@ -2599,6 +2615,7 @@ tagtic.cn
 target.bankofamerica.com
 target.microsoft.com
 target.my.com
+targetemsecure.blob.core.windows.net
 tb.events.data.microsoft.com
 tbm.snssdk.com
 tbsone.imtt.qq.com
@@ -2623,6 +2640,7 @@ telemetry.proton.me
 telemetry.urs.microsoft.com
 telemetry.visualstudio.microsoft.com
 temp.163.com
+tenmaxsgads.blob.core.windows.net
 test.activity.windows.com
 test.links.emails.br.discoveryplus.com
 test.links.emails.ca.discoveryplus.com
@@ -2677,6 +2695,7 @@ tnc3-bjlgy.zijieapi.com
 tnc31-platform-useast2a.tiktokv.com
 tns.simba.taobao.com
 tob-cms.bj.bcebos.com
+toggle.qq.com
 tongji-res.meizu.com
 tongji-res1.meizu.com
 tongji.meizu.com
@@ -2806,6 +2825,7 @@ upgrade.xl9.xunlei.com
 uplog.inews.qq.com
 uranus.jd.com
 url4077.ads-service.tiktok.com
+url7108.ads-service.tiktok.com
 urls.api.twitter.com
 us-teams.events.data.microsoft.com
 us.api.micloud.xiaomi.net
@@ -2890,6 +2910,8 @@ webstat.ws.126.net
 weishi.baidu.com
 wenku-cms.bj.bcebos.com
 wetelemetry.weixin.qq.com
+weus2watcab01.blob.core.windows.net
+weus2watcab02.blob.core.windows.net
 widget-api.dmm.co.jp
 widget-view.dmm.co.jp
 widget.weibo.com
@@ -2927,6 +2949,7 @@ wxsnsdy.wxs.qq.com
 wxsnsdythumb.wxs.qq.com
 x.jd.com
 x6img.com
+xblgdvrassets3010.blob.core.windows.net
 xdcs-collector.ximalaya.com
 xgapromomanager-pa.googleapis.com
 xifuquan.com
@@ -2958,6 +2981,7 @@ z-lib.id
 z-lib.io
 z.cdp-dev.cnn.com
 zazhipu.com
+zezevibo.z11.web.core.windows.net
 zhanzhang.toutiao.com
 zhihu-web-analytics.zhihu.com
 zks1-ib.msn.com
