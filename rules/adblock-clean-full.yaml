@@ -1,8 +1,8 @@
 # 干净广告规则 Full
 # 规则生成来源: 217heidai + 10007 (整合过滤版)
-# 自动剔除冲突/白名单: 2994 条
-# 最终生效规则: 238716 条
-# 更新时间: 2026-10-29 10:45:05 UTC
+# 自动剔除冲突/白名单: 2992 条
+# 最终生效规则: 238718 条
+# 更新时间: 2026-10-30 10:44:44 UTC
 # ----------------------------------------
 payload:
   - '+.0-02.net'
@@ -553,6 +553,8 @@ payload:
   - '+.10milelabour.com'
   - '+.tracking.10minutemail.now'
   - '+.ebistoppan2.10nengenki.com'
+  - '+.ablink.media.10play.com.au'
+  - '+.smetrics.10play.com.au'
   - '+.10q6e9ne5.de'
   - '+.10quiz.com'
   - '+.10sfc.com'
