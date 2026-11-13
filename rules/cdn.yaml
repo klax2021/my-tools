@@ -1,18 +1,18 @@
 # CDN 域名集合 (来自于 skk.moe)
-# 最终条数: 4699 条
+# 最终条数: 4701 条
 # ----------------------------------------
 payload:
   #########################################
   # Sukka's Ruleset - CDN Domains
-  # Last Updated: 2026-11-04T07:38:37.836Z
-  # Size: 4699
+  # Last Updated: 2026-11-13T08:54:24.339Z
+  # Size: 4701
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
   #
   # This file contains object storage and static assets CDN domains.
   #
-  # $content-hash-v1$:gas4BhWJjcNYmgZZd321XXuE0UTkSmSiOss7psX1Qcg$
+  # $content-hash-v1$:8Dku-E_OJ-NwQDXIcUvOWs4rsS0kfU4J0qlCnAnJKDc$
   #########################################
   - '7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe'
   - '0x0.st'
@@ -2703,6 +2703,7 @@ payload:
   - 'previews.123rf.com'
   - 'proxy.spigotmc.org'
   - 'public.hare200.com'
+  - 'public.popclip.app'
   - '+.quip-marketing.com'
   - 'r2cdn.corespeed.io'
   - 'reader.readmoo.com'
@@ -3273,6 +3274,7 @@ payload:
   - 'instafeed.nfcube.com'
   - '+.ipfs.genenetwork.org'
   - '+.ipfs.scalaproject.io'
+  - 'iprsoftwaremedia.com'
   - 'jac.yahoosandbox.com'
   - 'js.verygoodvault.com'
   - 'jsmodule.svc.litv.tv'
