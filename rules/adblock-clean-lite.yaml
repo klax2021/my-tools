@@ -1,8 +1,8 @@
 # 干净广告规则 Lite
 # 规则生成来源: 217heidai-lite + 10007 (精简过滤版)
-# 自动剔除冲突/白名单: 1356 条
-# 最终生效规则: 7124 条
-# 更新时间: 2026-11-21 12:14:49 UTC
+# 自动剔除冲突/白名单: 1357 条
+# 最终生效规则: 7123 条
+# 更新时间: 2026-11-22 12:20:35 UTC
 # ----------------------------------------
 payload:
   - '+.kwflvcdn.000dn.com'
@@ -6195,7 +6195,6 @@ payload:
   - '+.apmplus.ap-southeast-1.volces.com'
   - '+.tab.volces.com'
   - '+.volctrack.com'
-  - '+.report.voovmeeting.com'
   - '+.voqf299p8.com'
   - '+.vorluic.cn'
   - '+.vpsgu.cn'

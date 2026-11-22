@@ -41,7 +41,6 @@
 2220875948-doradztwo.storage.googleapis.com
 2530276768-doradztwo.storage.googleapis.com
 2g312kn32qfy-1323053341.cos.ap-bangkok.myqcloud.com
-32e1dff65ea4eb3627ed-f1ecc94c86a56d3e42e512fcfd192886.r6.cf1.rackcdn.com
 360kuai.com
 37bvsblobprodcus311.blob.core.windows.net
 3975.com
@@ -268,7 +267,6 @@
 6912395706-prawnicy.storage.googleapis.com
 6912535722-prawnicy.storage.googleapis.com
 6912544046-prawnicy.storage.googleapis.com
-6b8a953b2bf7788063d5-6e453f33ecbb90f11a62a5c376375af3.r71.cf5.rackcdn.com
 7121211343-prawnicy.storage.googleapis.com
 7141904836-prawnicy.storage.googleapis.com
 7282709700-prawnicy.storage.googleapis.com
@@ -332,7 +330,6 @@
 8181485079-prawnicy.storage.googleapis.com
 8272171760-prawnicy.storage.googleapis.com
 8281400409-prawnicy.storage.googleapis.com
-829331534d183e7d1f6a-8d91cc88b27b979d0ea53a10ce8855ec.r96.cf5.rackcdn.com
 8451899018-prawnicy.storage.googleapis.com
 8491517833-prawnicy.storage.googleapis.com
 8522399666-doradztwo.storage.googleapis.com
@@ -448,7 +445,6 @@
 9591721516-prawnicy.storage.googleapis.com
 9591731874-prawnicy.storage.googleapis.com
 9591910648-prawnicy.storage.googleapis.com
-97b1c56132dfcdd90f93-0c5c8388c0a5897e648f883e2c86dc72.r54.cf5.rackcdn.com
 9910255032-prawnicy.storage.googleapis.com
 9930499441-prawnicy.storage.googleapis.com
 9930514301-prawnicy.storage.googleapis.com
@@ -457,6 +453,7 @@ a.ac.qq.com
 a.baidu.com
 a.hcaptcha.com
 a.hl.mi.com
+a.medialaancdn.be
 a.thefreedictionary.com
 a1.api.bbc.co.uk
 a3.jandan.net
@@ -473,6 +470,7 @@ ab3de9.gamersky.com
 abcd.mdc.akamaized.net
 ablink.alerts.max.com
 ablink.marketing.max.com
+ablink.media.10play.com.au
 ablink.service.max.com
 ablink.stream.max.com
 abtest-api-data-sg.hoyoverse.com
@@ -983,6 +981,7 @@ brick.xhamster.com
 brick.xhamster.desi
 brick.xhamster2.com
 brick.xhamster3.com
+browser-intake-us5-datadoghq.com
 browserkernel.baidu.com
 browsertdidticket.m.qq.com
 bs-meta.yandex.ru
@@ -1065,6 +1064,7 @@ cc.map.qq.com
 cdn-bongdadem-net.cdn.ampproject.org
 cdn-guile.akamaized.net
 cdn-ketchapp.akamaized.net
+cdn.cookielaw.org
 cdn.ex.co
 cdn.ynuf.aliapp.org
 cdn1sitescout.edgesuite.net
@@ -1089,6 +1089,7 @@ click.aliexpress.com
 click.allkeyshop.com
 click.alternate.de
 click.bes.baidu.com
+click.e.zoom.us
 click.em.blizzard.com
 click.email.sonos.com
 click.gamersky.com
@@ -1160,6 +1161,7 @@ connatix.com
 console.bce.baidu.com
 content-analyticsadmin.googleapis.com
 content-analyticsdata.googleapis.com
+content-loader.com
 content.ingbank.pl
 content.yieldmanager.edgesuite.net
 contributor.google.com
@@ -1220,7 +1222,6 @@ d4.sina.com.cn
 d5.sina.com.cn
 d6.sina.com.cn
 d7.sina.com.cn
-d7d3cf2e81d293050033-3dfc0615b0fd7b49143049256703bfce.ssl.cf1.rackcdn.com
 d8.sina.com.cn
 d9.sina.com.cn
 da.mmarket.com
@@ -1260,6 +1261,7 @@ dcads.sina.com.cn
 dcbbwymp1bhlf.cloudfront.net
 dd.browser.360.cn
 de.pandora.xiaomi.com
+default.exp-tas.com
 deliver.kuwo.cn
 delivery.porn.com
 destyy.com
@@ -1339,6 +1341,7 @@ ebook.res.meizu.com
 eclick.baidu.com
 ecmb.bdimg.com
 eco.taobao.com
+edge.hgtv.ca
 edith-seb.xiaohongshu.com
 eduad.baidu.com
 eiv.baidu.com
@@ -1466,6 +1469,7 @@ fundingchoicesmessages.google.com
 fuseplatform.net
 fusion.qq.com
 fw.qq.com
+fwmrm.net
 fxgate.baidu.com
 g.163.com
 g.baidu.com
@@ -1562,6 +1566,7 @@ hq-tracking.qq.com
 hreport.meituan.com
 ht.pornhub.com
 htlbid.com
+html-load.com
 httpdns-sdk.n.netease.com
 httpdns.alicdn.com
 httpdns.baidu.com
@@ -1756,6 +1761,7 @@ log-dr.tiktokv.com
 log-dr16-normal-no1a.tiktokv.eu.edgesuite.net
 log-dr16-normal-useast1a.tiktokv.com
 log-dr16-normal-useastred.tiktokv.eu.edgesuite.net
+log-gateway.zoom.us
 log-h5.cmpassport.com
 log-hl.snssdk.com
 log-klink.zijieapi.com
@@ -1793,6 +1799,7 @@ log.web.kugou.com
 log.weixin.qq.com
 log.wtlogin.qq.com
 log.zijieapi.com
+log.zoom.us
 log1.17173.com
 log1.cmpassport.com
 log1.wtlogin.qq.com
@@ -2289,6 +2296,7 @@ report.syzs.qq.com
 report.tencentmusic.com
 report.trade.weixin.qq.com
 report.tv.kohesport.qq.com
+report.voovmeeting.com
 res.mi.baidu.com
 resolver.gslb.mi-idc.com
 retcode.taobao.com
@@ -2305,6 +2313,7 @@ rockpoint.xhamster.desi
 rockpoint.xhamster2.com
 rockpoint.xhamster3.com
 romeccs.microsoft.com
+rootzaffiliates.com
 rs1.qq.com
 rs2.qq.com
 rtb.julang.taobao.com
@@ -2433,7 +2442,6 @@ sgm-w.jd.com
 sgtm.mon-maire.fr
 shadu.baidu.com
 share.baidu.com
-sharethis.com
 shieldload.neoseeker.com
 show-msgch.qq.com
 shuzilm.cn
@@ -2451,6 +2459,7 @@ smartad.10010.com
 smartcard.apps.coloros.com
 smartlock.google.com
 smetrics.10.com.au
+smetrics.10play.com.au
 smetrics.bankofamerica.com
 smetrics.cbc.youtube.mercedes-benz.com
 smetrics.cnn.com
@@ -2828,6 +2837,7 @@ url7108.ads-service.tiktok.com
 urls.api.twitter.com
 us-teams.events.data.microsoft.com
 us.api.micloud.xiaomi.net
+us04logfiles.zoom.us
 usc-visio-telemetry.officeapps.live.com
 usp1.baidu.com
 utility.baidu.com
