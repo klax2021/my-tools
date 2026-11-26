@@ -1,8 +1,8 @@
 # 干净广告规则 Full
 # 规则生成来源: 217heidai + 10007 (整合过滤版)
-# 自动剔除冲突/白名单: 3003 条
-# 最终生效规则: 238707 条
-# 更新时间: 2026-11-25 13:58:35 UTC
+# 自动剔除冲突/白名单: 3005 条
+# 最终生效规则: 238705 条
+# 更新时间: 2026-11-26 13:37:50 UTC
 # ----------------------------------------
 payload:
   - '+.0-02.net'
@@ -14288,8 +14288,6 @@ payload:
   - '+.umlazada.alibaba.com'
   - '+.sentry.alibaba.ir'
   - '+.acs-mum.alibabachengdun.com'
-  - '+.mum.alibabachengdun.com'
-  - '+.mum.alibabachengdun.net'
   - '+.images.info.alibabacloud.com'
   - '+.beacon-api.aliyuncs.com.gds.alibabadns.com'
   - '+.cn-beijing-c.dualstack.log.usd.alibabadns.com'
