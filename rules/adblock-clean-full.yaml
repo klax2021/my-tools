@@ -1,8 +1,8 @@
 # 干净广告规则 Full
 # 规则生成来源: 217heidai + 10007 (整合过滤版)
-# 自动剔除冲突/白名单: 3005 条
-# 最终生效规则: 238705 条
-# 更新时间: 2026-11-27 13:33:33 UTC
+# 自动剔除冲突/白名单: 3003 条
+# 最终生效规则: 238707 条
+# 更新时间: 2026-11-28 12:46:15 UTC
 # ----------------------------------------
 payload:
   - '+.0-02.net'
@@ -123114,6 +123114,7 @@ payload:
   - '+.linkbuddies.com'
   - '+.pubfeed.linkby.com'
   - '+.linkconnect.click'
+  - '+.linkconnector.com'
   - '+.marketing.linkdex.com'
   - '+.sepialine.linkdsg.com'
   - '+.sst.linkeagroup.com'
@@ -201337,6 +201338,7 @@ payload:
   - '+.all.cnzz.com.danuoyi.tbcache.com'
   - '+.error.taobao.com.danuoyi.tbcache.com'
   - '+.httpdns.danuoyi.tbcache.com'
+  - '+.g.tbcdn.cn'
   - '+.tbckanlpijfxc.site'
   - '+.joant.tbdcoffeeco.com'
   - '+.pl.tbepc.com'

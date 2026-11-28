@@ -1,8 +1,8 @@
 # 干净广告规则 Lite
 # 规则生成来源: 217heidai-lite + 10007 (精简过滤版)
-# 自动剔除冲突/白名单: 1359 条
-# 最终生效规则: 7121 条
-# 更新时间: 2026-11-27 13:33:33 UTC
+# 自动剔除冲突/白名单: 1358 条
+# 最终生效规则: 7122 条
+# 更新时间: 2026-11-28 12:46:15 UTC
 # ----------------------------------------
 payload:
   - '+.kwflvcdn.000dn.com'
@@ -5544,6 +5544,7 @@ payload:
   - '+.all.cnzz.com.danuoyi.tbcache.com'
   - '+.error.taobao.com.danuoyi.tbcache.com'
   - '+.httpdns.danuoyi.tbcache.com'
+  - '+.g.tbcdn.cn'
   - '+.sg.tdatamaster.com'
   - '+.tdataspace.com'
   - '+.site.tdk.cn'
